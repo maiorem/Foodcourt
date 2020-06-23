@@ -1,10 +1,11 @@
 
+/* 전체간격초기화 */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* 키오스크 화면 */
+/* 키오스크 화면프레임 */
 #wrap {
     width: 1024px;
     height: 768px;
@@ -14,7 +15,7 @@
     /* position: relative; */
 }
 
-/* 타이틀 nav */
+/* 타이틀 nav 영역 */
 #title_area {
     width: 1024px;
     height: 100px;
@@ -28,7 +29,7 @@
     height: 90px;
 
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 40px;
 
     float: left;
     overflow: hidden;
@@ -54,15 +55,15 @@
     
 }
 
-/* 메뉴 이미지 그룹 */
+/* 메뉴 아이콘 그룹 */
 #menu_imges {
-    padding-top: 5px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 
-/* 메뉴 이미지들 */
+/* 메뉴 아이콘 */
 #menu_imges>img {
     width: 80px;
     height: 55px;
@@ -77,7 +78,7 @@
 }
 
 /* ------------------------------------------------ */
-/* 상세메뉴영역 */
+/* 상세메뉴영역 검은배경*/
 #content_area {
     width: 984px;
     height: 478px;
@@ -89,40 +90,35 @@
 
 /* 상세메뉴영역 흰배경 */
 #content_background {
-    width: 970px;
-    height: 460px;
+    width: 964px;
+    height: 470px;
 
     /* text-align: center; */
-    margin: 0px auto;
-    top: 15px;
+    margin: 0 auto;
+    top: 8px;
 
-    background-color: white;
+    background-color:white;
     border-top-left-radius: 30px;
 
-
-    bottom:0px;    
-
     position: relative;
+    
+    /* 스크롤 */
     overflow: auto;
 }
 
+/* 상세메뉴 테이블 div */
 #icons {
-    
     position: relative;
-    /* text-align: center; */
-    margin: 0px auto;
-    /* overflow: scroll; */
+    margin: 0 auto;
 }
 
-/* 상세메뉴 테이블 */
+/* 상세메뉴 table */
 #menuTable {
     width: 950px;
     height: 450px;
 
     margin: 0 auto;
     margin-top: 20px;
-
-    
 
     text-align: center;
 
@@ -132,26 +128,37 @@
 }
 
 /* 상세메뉴 이미지들 */
-.foodMenu {
-    width: 200px;
+.menuImg {
+    width: 320px;
     height: 130px;
-
-    margin: 0 auto;
-    
-
 }
 
+/* 상세메뉴 이름 */
 .menuName {
     font-weight: 100;
     color: dimgrey;
-    margin-bottom: 5px;
+    /* margin-bottom: 10px; */
+    margin-right: 20px;
+    padding-bottom: 10px;
 
 }
 
+/* 상세메뉴 가격 */
 .menuPrice {
     font-weight: bold;
     color: FireBrick;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+/* ------------------------------------------------ */
+#footer {
+    width: 1024px;
+    height: 190px;
+
+    background-color: dimgray;
+    bottom: 0;
 }
 
 
