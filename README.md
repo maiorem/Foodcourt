@@ -1,7 +1,8 @@
 # Foodcourt
 푸드코트
 <hr />
-## 참여자
+## 참여자    
+
 팀장 : 홍세영 @[maiorem](https://github.com/maiorem)        
 김보겸@[]()      
 박혜미@[]()       
