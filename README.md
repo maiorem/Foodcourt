@@ -1,5 +1,5 @@
 # Foodcourt
-푸드코트
+푸드코트 UI/UX Project
 
 <hr />
 
