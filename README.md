@@ -8,7 +8,7 @@
 팀장 : 홍세영 @[maiorem](https://github.com/maiorem)        
 김보겸@[BogyeumKim](https://github.com/BogyeumKim)      
 박혜미@[phm3241](https://github.com/phm3241)       
-송가람@[]()       
+송가람@[GaRam Song](https://github.com/NikkieS)       
 임재영@[young6435](https://github.com/young6435)       
 장윤원@[zannew](https://github.com/zannew)       
 
