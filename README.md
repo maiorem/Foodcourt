@@ -21,6 +21,6 @@
 2. 흐름도(Flow Chart)    
 3. 화면설계(Prototyping)     
 
-[PPT LINK](https://drive.google.com/file/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/view)
+[PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
 
 <hr />
