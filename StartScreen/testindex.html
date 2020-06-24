@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="../Dessert/menu.css">
+    <link rel="stylesheet" href="pop.css">
     
 </head>
 
@@ -43,6 +44,7 @@
 
 
         <div class="modal">
+            
             <div id="wrap">
                 <div class="header"><img src="../img/food.PNG" id="menulogo"></div>
 
@@ -77,92 +79,97 @@
     <div id="wrap_kiosk">
     <div class="modal">
    
-       
+        <div id="wrap">
             <div id="title_area">
                 <div>
-                    <img src="../img/food.PNG" class="menuboard_logo" >
+                    <img src="../img/food.PNG" class="logo" id="logo">
                 </div>
                 <div id="menu_tab">
                     <div id="menu_imges">
-                        <img src="../img/korea.png">
-                        <img src="../img/china.png">
-                        <img src="../img/japan.png">
-                        <img src="../img/westem.png">
-                        <img src="../img/asian.png">
-                        <img src="../img/dessert.png">
+                        <button type="button" class="menu_icon_btn"><img src="../img/korea.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/china.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/japan.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/westem.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/asian.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/dessert.png"></button>
                     </div>
                 </div>
             </div>
-
+        
             <div id="content_area">
                 <div id="content_background">
-                    <div id="icons">
-                        <table id="menu_table" >
-                            <!-- <tr>
-                                <td class="menu_cell">
-                                    <img src="../img_dessert/밀푀유.png" class="menu_img">
-                                    <label class="menu_name">밀푀유</label>
-                                    <label class="menu_price">5,000원</label>
-                                    
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="../img_dessert/타르트 (3).png" class="menu_img">
-                                    <label class="menu_name">타르트</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="../img_dessert/생크림케이크.png" class="menu_img">
-                                    <label class="menu_name">생크림케이크</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                            </tr> -->
-                            <tr>
-                                <td class="menu_cell">
-                                    <img src="../Dessert/Img_dessert/티라미수 (1).png" class="menu_img">
-                                    <label class="menu_name">티 라 미 수</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="../Dessert/Img_dessert/팥빙수.png" class="menu_img">
-                                    <label class="menu_name">팥 빙 수</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="../Dessert/Img_dessert/요거트.png" class="menu_img">
-                                    <label class="menu_name">요 거 트</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="menu_cell">
-                                    <img src="../Dessert/Img_dessert/프레즐.png" class="menu_img">
-                                    <label class="menu_name">프 레 즐</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="../Dessert/Img_dessert/쿠키 (2).png" class="menu_img">
-                                    <label class="menu_name">쿠 키</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="../Dessert/Img_dessert/아이스크림.png" class="menu_img">
-                                    <label class="menu_name">아 이 스 크 림</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                            </tr>
-                        </table>
-
-                        
-
+                    <div id="menu_div" >
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/티라미수 (1).png" class="menu_img">
+                                <label class="menu_name">티 라 미 수</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/팥빙수.png" class="menu_img">
+                                <label class="menu_name">팥 빙 수</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/요거트.png" class="menu_img">
+                                <label class="menu_name">요 거 트</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/프레즐.png" class="menu_img">
+                                <label class="menu_name">프 레 즐</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/쿠키 (2).png" class="menu_img">
+                                <label class="menu_name">쿠 키</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/아이스크림.png" class="menu_img">
+                                <label class="menu_name">아 이 스 크 림</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
                     </div>
-        </div>
-        </div>   
+                </div>
+            </div>  <!-- content_area end -->
+                  
+              
+                  
+             
+            
+            
+           
     </div> 
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
     </div>
     
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <script src="index.js"></script>
+        <script src="pop.js"></script>
 </body>
 
 </html>
