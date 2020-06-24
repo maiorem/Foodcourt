@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;   
 }
 
 
@@ -60,7 +61,7 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 
@@ -141,17 +142,25 @@
 #side_menu {
     width: 660px;
     height: 400px;
-    background-color: whitesmoke;
+    background-color: whitesmoke;   
 }
 
-/* 영역 : 사이드메뉴 선택테이블 */
-#side_menu_table {
-    overflow: auto;
+/* 영역 : 사이드메뉴 div */
+#side_menu_div {
+    position: relative;
     margin: 0 auto;
+
     padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
     text-align: center;
+}
+
+
+/* 영역 : 사이드메뉴 각 셀들 */
+#side_menu_div div {
+    float: left;
+    padding-bottom: 10px;
 }
 
 /* 텍스트 : 사이드메뉴 */
@@ -171,7 +180,7 @@
     margin-right: 20px;
     margin-bottom: 10px;
     display: block;
-    border-radius: 5px;
+    border-radius: 10px;
    
 }
 
@@ -182,7 +191,7 @@
     margin-right: 20px;
     padding-bottom: 10px;
 
-    font-family: 'Nanum Gothic', sans-serif;   
+    
 }
 
 
@@ -191,8 +200,6 @@
     font-weight: bold;
     color: red;
     margin-bottom: 10px;
-
-    font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* 버튼 : 사이드메뉴 선택 */
