@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍반점</title>
+
+    <link href="chinese_menu.css" rel="stylesheet">
+    <!-- <link href="indexCopy.css" rel="stylesheet" > -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    
+
+</head>
+<body>
+    <!-- 메뉴판 화면 로고 이미지 95 * 유동값 / 
+        메뉴 이동 아이콘 크기 70 * 90 / 
+        레이아웃 Content_area  사이즈 658 * 920
+        메뉴판 화면 Content_area > 메뉴 이미지 127 * 197 / 
+        장바구니 190 * 978 / 
+        결제 버튼 49 * 206 -->
+
+    <div id="kiosk"> 
+        <div id="wrap">
+            <div id="title_area">
+                <div>
+                    <img src="../img/food.png" class="logo" id="logo">
+                </div>
+                <div id="menu_tab">
+                    <div id="menu_imges">
+                        <img src="../img/korea.png">
+                        <img src="../img/china.png">
+                        <img src="../img/japan.png">
+                        <img src="../img/westem.png">
+                        <img src="../img/asian.png">
+                        <img src="../img/dessert.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="content_area">
+                <div id="content_background">
+                    <div id="icons">
+                        <table id="menu_table" >
+                            <tr>
+                                <td class="menu_cell">
+                                    <button class="chinese" id="noodle"><img src="img_chinese/다운로드.jpg" class="menu_img"></button>
+                                    <label class="menu_name">볶 음 짬 뽕</label>
+                                    <label class="menu_price">7,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <button class="chinese" id="marasoup"><img src="img_chinese/maratang.jpg" class="menu_img"></button>
+                                    <label class="menu_name">마 라 탕</label>
+                                    <label class="menu_price">8,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <button class="chinese" id="eggplants_stir"><img src="img_chinese/eggplants.jpg" class="menu_img"></button>
+                                    <label class="menu_name">어 향 가 지</label>
+                                    <label class="menu_price">10,000원</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu_cell">
+                                    <button class="chinese" id="pork"><img src="img_chinese/qquabarou.webp" class="menu_img"></button>
+                                    <label class="menu_name">꿔 바 로 우</label>
+                                    <label class="menu_price">15,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <button class="chinese" id="eggplants_fry"><img src="img_chinese/jisamsun.jpg" class="menu_img"></button>
+                                    <label class="menu_name">지 삼 선</label>
+                                    <label class="menu_price">8,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <button class="chinese" id="shirimp"><img src="img_chinese/shirimp.jpg" class="menu_img"></button>
+                                    <label class="menu_name">크 림 새 우</label>
+                                    <label class="menu_price">10,000원</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="footer_area">
+                <div id="cartin">
+                    <table id="cart_list">
+                        <tr>
+                            <th>번호</th>
+                            <th>분류</th>
+                            <th>메뉴</th>
+                            <th>수량</th>
+                            <th>금액</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="event_area">
+                    <input type="button" id="return_startscreen" href="#" value="처음으로">
+                    <input type="button" id="payment" href="#" value="결제하기">
+
+                </div>
+            </div> -->
+
+
+         </div> <!--wrap end -->
+
+         <div>
+            <div id="card_in">
+                 <H4>카드</H4>
+                 <div class="card_box"></div>   
+            </div>
+            <div id="receipt">
+                <H4>영수증</H4>
+                <div class="receipt_box"></div>   
+           </div>
+
+         </div>
+
+
+
+    </div> <!--kiosk end -->
+    
+
+
+
+
+
+    
+</body>
+</html>
