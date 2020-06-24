@@ -17,18 +17,21 @@
             <div id="content_pop_background">
 
                 <div id="select_menu">
-                    <div id="select_count">
-                        <img src="../dessert/Img_dessert/프레즐.png" class="select_menu_img">
+                    <div id="select_menu_img">
+                        <img src="../dessert/Img_dessert/프레즐.png">
                     </div>
                     <div id="menu_info">
                         <h2 class="sub_title">프레즐</h2>
-                        <h4 class="info">조리시간: 15~20분</h4>
-                        <h4 class="info">프레즐 설명</h4>
+                        <p class="info">조리시간: 15~20분<br>프레즐 설명</p>
+                    </div>
+                    <div id="select_count">
                         <!-- <input type="button" class=count_btn" value="-">
                         <input type="number" class="count_num">
                         <input type="button" class=count_btn" value="+"> -->
+                        <h2 class="side_text">수량</h2>
                         <input type="number" min="1" max="9999" maxlength="4" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 1) ? (1/1) : this.value;">
-                        <h2 id="select_menu_price">5,000원</h2>
+                        <h2 class="side_text">가격</h2>
+                        <h2 class="select_menu_price">5,000원</h2>
                     </div>
                 </div>
 
@@ -72,8 +75,8 @@
                 </div> <!-- side_menu end -->
                 
                 <div id="side_event_area">
-                    <input type="button" id="cancle" href="#" value="취 소">
-                    <input type="button" id="ok" href="#" value="확 인">
+                    <input type="button" id="side_cancle" href="#" value="취 소">
+                    <input type="button" id="side_ok" href="#" value="확 인">
                 </div>
 
             </div> <!-- content_pop_background end-->
