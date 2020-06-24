@@ -25,9 +25,6 @@
                         <p class="info">조리시간: 15~20분<br>프레즐 설명</p>
                     </div>
                     <div id="select_count">
-                        <!-- <input type="button" class=count_btn" value="-">
-                        <input type="number" class="count_num">
-                        <input type="button" class=count_btn" value="+"> -->
                         <h2 class="side_text">수량</h2>
                         <input type="number" min="1" max="9999" maxlength="4" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 1) ? (1/1) : this.value;">
                         <h2 class="side_text">가격</h2>
@@ -40,26 +37,34 @@
                     <table id="side_menu_table" >
                         <tr>
                             <td>
-                                <img src="../dessert/Img_dessert/ㅎ사이드음료 (9).png" class="side_menu_img">
-                                <label class="side_menu_name">아메리카노</label>
-                                <label class="side_menu_price">2,000원</label>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (9).png" class="side_menu_img">
+                                    <label class="side_menu_name">아메리카노</label>
+                                    <label class="side_menu_price">2,000원</label>
+                                </button>
                             </td>
                             <td>
-                                <img src="../dessert/Img_dessert/ㅎ사이드음료 (1).png" class="side_menu_img">
-                                <label class="side_menu_name">ICE아메리카노</label>
-                                <label class="side_menu_price">2,000원</label>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (1).png" class="side_menu_img">
+                                    <label class="side_menu_name">ICE아메리카노</label>
+                                    <label class="side_menu_price">2,000원</label>
+                                </button>
                             </td>
                             <td>
-                                <img src="../dessert/Img_dessert/ㅎ사이드음료 (2).png" class="side_menu_img">
-                                <label class="side_menu_name">오렌지주스</label>
-                                <label class="side_menu_price">2,000원</label>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (2).png" class="side_menu_img">
+                                    <label class="side_menu_name">오렌지주스</label>
+                                    <label class="side_menu_price">2,000원</label>
+                                </button>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img src="../dessert/Img_dessert/ㅎ사이드음료 (6).png" class="side_menu_img">
-                                <label class="side_menu_name">콜라/사이다</label>
-                                <label class="side_menu_price">1,500원</label>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (6).png" class="side_menu_img">
+                                    <label class="side_menu_name">콜라/사이다</label>
+                                    <label class="side_menu_price">1,500원</label>
+                                </button>
                             </td>
                             <td><img src=""></td>
                             <td><img src=""></td>
@@ -80,10 +85,8 @@
                 </div>
 
             </div> <!-- content_pop_background end-->
-            
-
-        </div>
-    </div>
+         </div>   <!-- content_pop_area end -->
+    </div>    <!-- wrap end-->
 
 
 
