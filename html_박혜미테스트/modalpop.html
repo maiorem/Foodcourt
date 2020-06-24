@@ -1,157 +1,371 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-      <link rel="stylesheet" href="../Dessert/menu.css">
-    <link rel="stylesheet" href="../메뉴선택div버전.css">
-    <link href="../Dessert/side_menu.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel="stylesheet" href="../css_박혜미테스트/index.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/menu_main.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/menu.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/menu_side.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/pop.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/pop_waiting.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/orderlist.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/card.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/cardPlusWaiting_card.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/cardPlusWaiting_w.css">
     
     <script>
 
-$(document).ready(function() {
-    $('.trigger').click(function() {
-       $('#overlay').fadeIn(300);
-    });
- 
-    $('.close').click(function() {
-       $('#overlay').fadeOut(300);
-    });
- });
+        $(document).ready(function() {
+            $('.trigger').click(function() {
+            $('#overlay').fadeIn(300);
+            });
+    
+            $('.close').click(function() {
+            $('#overlay').fadeOut(300);
+            });
+        });
+
     </script>
    
 </head>
 
-   <body>
+<body>
 
+    <!-- 키오스크 메뉴판시작----------------------------------- -->
     <div id="wrap_kiosk">
-        <div class="modal">
-       
-            <div id="wrap">
+            
+
+        <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    메뉴화면 고정포멧(nav, footer)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+        <div id="wrap">
                 <div id="title_area">
-                    <img src="../img/food.PNG">
-                    <div class="menuOpt">
-                        <img src="../img/dessert.PNG">
-                        <img src="../img/asian.PNG">
-                        <img src="../img/china.PNG">
-                        <img src="../img/japan.PNG">
-                        <img src="../img/westem.PNG">
-                        <img src="../img/korea.PNG">
+                    <div>
+                        <img src="../img/food.PNG" class="small_logo" id="small_logo">
+                    </div>
+                    <div id="menu_tab">
+                        <div id="menu_imges">
+                            <!-- ◆ 박혜미수정 : 메뉴아이콘 class, value값 추가 -->
+                            <button type="button" class="menu_icon_btn trigger korea " value="korea "><img src="../img/korea.png" class="menu_icon"></button>
+                            <button type="button" class="menu_icon_btn trigger china" value="china"><img src="../img/china.png" class="menu_icon"></button>
+                            <button type="button" class="menu_icon_btn trigger japan" value="japan"><img src="../img/japan.png" class="menu_icon"></button>
+                            <button type="button" class="menu_icon_btn trigger westem" value="westem"><img src="../img/westem.png" class="menu_icon"></button>
+                            <button type="button" class="menu_icon_btn trigger asian" value="asian"><img src="../img/asian.png" class="menu_icon"></button>
+                            <button type="button" class="menu_icon_btn trigger dessert" value="dessert"><img src="../img/dessert.png" class="menu_icon"></button>
+                        </div>
                     </div>
                 </div>
+
+
+                <div id="footer_area">
+                    <div id="cartin">
+                        <div id="cart_head">
+                            <table id="cart_head_table">
+                                <tr>
+                                    <th>번호</th>
+                                    <th>분류</th>
+                                    <th>메뉴</th>
+                                    <th>수량</th>
+                                    <th>금액</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <table id="cart_list">
+                        </table>
+                    </div>
+                    <div id="event_area">
+                        <input type="button" id="return_startscreen" href="#" value="처음으로">
+                        <input type="button" id="payment" href="#" value="결제하기">
+            
+                    </div>
+                </div> <!-- footer_area end -->
+
+            <!-- 메뉴화면 고정포멧(nav, footer) end----------------------------------- -->
         
-                <div id="content_area">
-                    <div id="menuList">
-                        <div id="menuTable">
-                            <div class="menuSelect">
-                                <div id="card"><img src="../img/돌솥.jpg" class="trigger"><br>돌솥비빔밥<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/냉면.jpg" class="trigger"><br>냉면<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/된찌.jpg"><br>된장찌개<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/김치.jpg"><br>김치찌개<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/순두부.jpg"><br>순두부찌개<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/공기밥.jpg"><br>백반<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/김치.jpg"><br>김치찌개<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/순두부.jpg"><br>순두부찌개<div id="price">5,000</div>
-                                </div>
-                                <div id="card"><img src="../img/공기밥.jpg"><br>백반<div id="price">5,000</div>
-                                </div>
-                      </div>
-                  
-                      
-                 
-                
-                
-     
-  
-      <div id="overlay">
-
-
-
-         <!-- <div id="popup"> -->
-            <!-- <div id="close">X</div> -->
-           
-
-            <div id="content_pop_area">
-
-                <div id="content_pop_background">
-                    <!-- <div id="close"></div> -->
-    
-                    <div id="select_menu">
-                        <div id="select_menu_img">
-                            <img src="../Dessert/Img_dessert/프레즐.png">
-                        </div>
-                        <div id="menu_info">
-                            <h2 class="sub_title">프레즐</h2>
-                            <p class="info">조리시간: 15~20분<br>프레즐 설명</p>
-                        </div>
-                        <div id="select_count">
-                            <h2 class="side_text">수량</h2>
-                            <input type="number" min="1" max="9999" maxlength="4" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 1) ? (1/1) : this.value;">
-                            <h2 class="side_text">가격</h2>
-                            <h2 class="select_menu_price">5,000원</h2>
+            <!-- ◆ 박혜미수정 : 디저트메뉴  가격수정, class, value값 추가--------------------------------------------->
+            <div class="modal" id="overay">
+                <div class="content_area">
+                    <div class="content_background">
+                        <div class="menu_div" >
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn trigger tiramisu" value="tiramisu" data-value="5000"">
+                                    <img src="../img/티라미수 (1).png" class="menu_img">
+                                    <label class="menu_name">티 라 미 수</label>
+                                    <label class="menu_price">5,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn bingsu" value="bingsu" data-value="6000"">
+                                    <img src="../img/팥빙수.png" class="menu_img">
+                                    <label class="menu_name">팥 빙 수</label>
+                                    <label class="menu_price">6,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn yogurt" value="yogurt" data-value="4000"">
+                                    <img src="../img/요거트.png" class="menu_img">
+                                    <label class="menu_name">요 거 트</label>
+                                    <label class="menu_price">4,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn pretzels" value="pretzels" data-value="3000"">
+                                    <img src="../img/프레즐.png" class="menu_img">
+                                    <label class="menu_name">프 레 즐</label>
+                                    <label class="menu_price">3,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn cookie" value="cookie" data-value="2000"">
+                                    <img src="../img/쿠키 (2).png" class="menu_img">
+                                    <label class="menu_name">쿠 키</label>
+                                    <label class="menu_price">2,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn icecream" value="icecream" data-value="1500"">
+                                    <img src="../img/아이스크림.png" class="menu_img">
+                                    <label class="menu_name">아 이 스 크 림</label>
+                                    <label class="menu_price">5,000원</label>
+                                </button>
+                            </div>
                         </div>
                     </div>
-    
-                    <div id="side_menu">
-                        <h2 class="side_title"> ㅣ 사이드 메뉴</h2>
-                        <div id="side_menu_div">
-                            <div>
-                                <button type="button" class="side_menu_btn">
-                                    <img src="../Dessert/Img_dessert/ㅎ사이드음료 (9).png (9).png" class="side_menu_img">
-                                    <label class="side_menu_name">아메리카노</label>
-                                    <label class="side_menu_price">2,000원</label>
-                                </button>
-                            </div>
-                            <div>
-                                <button type="button" class="side_menu_btn">
-                                    <img src="../Dessert/Img_dessert/ㅎ사이드음료 (1).png (1).png" class="side_menu_img">
-                                    <label class="side_menu_name">ICE아메리카노</label>
-                                    <label class="side_menu_price">2,000원</label>
-                                </button>
-                            </div>
-                            <div>
-                                <button type="button" class="side_menu_btn">
-                                    <img src="../Dessert/Img_dessert/ㅎ사이드음료 (2).png (2).png" class="side_menu_img">
-                                    <label class="side_menu_name">오렌지주스</label>
-                                    <label class="side_menu_price">2,000원</label>
-                                </button>
-                            </div>
-                            <div>
-                                <button type="button" class="side_menu_btn">
-                                    <img src="../Dessert/Img_dessert/ㅎ사이드음료 (2).png (6).png" class="side_menu_img">
-                                    <label class="side_menu_name">콜라/사이다</label>
-                                    <label class="side_menu_price">1,500원</label>
-                                </button>
-                            </div>
-    
-                        </div>
-    
-                    </div> <!-- side_menu end -->
-                    
-                    <div id="side_event_area">
-                        <div id="close"><input type="button" class="side_cancle" href="#" value="취 소"></div>
-                        <div id="close"><input type="button" id="side_ok" href="#" value="확 인"></div>
+                </div>  <!-- content_area "디저트 메뉴" end -->
+            </div> <!-- modal 디저트 end -->
+
+        </div> <!-- wrap 디저트 end-->
+                
+
+
+
+        <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    메뉴화면 고정포멧(nav, footer)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+        <div id="wrap">
+            <div id="title_area">
+                <div>
+                    <img src="../img/food.PNG" class="small_logo" id="small_logo">
+                </div>
+                <div id="menu_tab">
+                    <div id="menu_imges">
+                        <!-- ◆ 박혜미수정 : 메뉴아이콘 class, value값 추가 -->
+                        <button type="button" class="menu_icon_btn korea" value="korea"><img src="../img/korea.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn china" value="china"><img src="../img/china.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn japan" value="japan"><img src="../img/japan.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn westem" value="westem"><img src="../img/westem.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn asian" value="asian"><img src="../img/asian.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn dessert" value="dessert"><img src="../img/dessert.png" class="menu_icon"></button>
                     </div>
-
-                </div> <!-- content_pop_background end-->
-             </div>   <!-- content_pop_area end -->
-
+                </div>
+            </div>
 
 
+            <div id="footer_area">
+                <div id="cartin">
+                    <div id="cart_head">
+                        <table id="cart_head_table">
+                            <tr>
+                                <th>번호</th>
+                                <th>분류</th>
+                                <th>메뉴</th>
+                                <th>수량</th>
+                                <th>금액</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <table id="cart_list">
+                    </table>
+                </div>
+                <div id="event_area">
+                    <input type="button" id="return_startscreen" href="#" value="처음으로">
+                    <input type="button" id="payment" href="#" value="결제하기">
+        
+                </div>
+            </div> <!-- footer_area end -->
+
+            <!-- 메뉴화면 고정포멧(nav, footer) end----------------------------------- -->
+        
+            <!-- ◆ 박혜미수정 : 디저트메뉴  가격수정, class, value값 추가--------------------------------------------->
+            <div class="modal">
+                <div class="content_area" >
+                    <div class="content_background">
+                        <div class="menu_div" >
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn padthai" value="padthai" data-value="5500">
+                                    <img src="../img/아시안_팟타이.png" class="menu_img">
+                                    <label class="menu_name">팟 타 이</label>
+                                    <label class="menu_price">5,500원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn curry" value="curry" data-value="6500">
+                                    <img src="../img/아시안_커리.png" class="menu_img">
+                                    <label class="menu_name">커 리</label>
+                                    <label class="menu_price">6,500원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn ssomttam" value="ssomttam" data-value="6000">
+                                    <img src="../img/아시안_쏨땀.png" class="menu_img">
+                                    <label class="menu_name">쏨 땀</label>
+                                    <label class="menu_price">6,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn ttom" value="ttom" data-value="7000">
+                                    <img src="../img/아시안_똠양꿍.png" class="menu_img">
+                                    <label class="menu_name">똠 양 꿍</label>
+                                    <label class="menu_price">7,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn noodle" value="noodle" data-value="6000">
+                                    <img src="../img/아시안_쌀국수.png" class="menu_img">
+                                    <label class="menu_name">베 트 남 쌀 국 수</label>
+                                    <label class="menu_price">6,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn coconut" value="coconut" data-value="3000">
+                                    <img src="../img/아시안_코코넛.png" class="menu_img">
+                                    <label class="menu_name">코 코 넛 음 료</label>
+                                    <label class="menu_price">3,000원</label>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!--content_area "아시안 메뉴" end -->
+            </div> <!-- modal 아시안 end -->
+            
+        </div> <!-- wrap 아시안 end-->
 
 
 
-</div>
 
-         </div>
-      </div>
-   <body>
+
+        <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    메뉴화면 고정포멧(nav, footer)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+        <div id="wrap">
+            <div id="title_area">
+                <div>
+                    <img src="../img/food.PNG" class="small_logo" id="small_logo">
+                </div>
+                <div id="menu_tab">
+                    <div id="menu_imges">
+                        <!-- ◆ 박혜미수정 : 메뉴아이콘 class, value값 추가 -->
+                        <button type="button" class="menu_icon_btn korea" value="korea"><img src="../img/korea.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn china" value="china"><img src="../img/china.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn japan" value="japan"><img src="../img/japan.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn westem" value="westem"><img src="../img/westem.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn asian" value="asian"><img src="../img/asian.png" class="menu_icon"></button>
+                        <button type="button" class="menu_icon_btn dessert" value="dessert"><img src="../img/dessert.png" class="menu_icon"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="footer_area">
+                <div id="cartin">
+                    <div id="cart_head">
+                        <table id="cart_head_table">
+                            <tr>
+                                <th>번호</th>
+                                <th>분류</th>
+                                <th>메뉴</th>
+                                <th>수량</th>
+                                <th>금액</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <table id="cart_list">
+                    </table>
+                </div>
+                <div id="event_area">
+                    <input type="button" id="return_startscreen" href="#" value="처음으로">
+                    <input type="button" id="payment" href="#" value="결제하기">
+
+                </div>
+            </div> <!-- footer_area end -->
+
+            <!-- 메뉴화면 고정포멧(nav, footer) end----------------------------------- -->
+
+
+            <!-- ◆ 박혜미추가 : 일식메뉴 ------------------------------------------------------------------------>
+            <div class="modal">
+                <div class="content_area">
+                    <div class="content_background">
+                        <div class="menu_div" >
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn padthai" value="padthai" data-value="9500">
+                                    <img src="../img/일식_연어.png" class="menu_img">
+                                    <label class="menu_name">사 케 동 (연어)</label>
+                                    <label class="menu_price">9,500원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn curry" value="curry" data-value="11500">
+                                    <img src="../img/일식_장어.png" class="menu_img">
+                                    <label class="menu_name">우 나 기 동 (장어)</label>
+                                    <label class="menu_price">11,500원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn ssomttam" value="ssomttam" data-value="9000">
+                                    <img src="../img/일식_닭.png" class="menu_img">
+                                    <label class="menu_name">가 라 아 케 동 (닭고기) </label>
+                                    <label class="menu_price">9,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn ttom" value="ttom" data-value="7000">
+                                    <img src="../img/일식_돈가스.png" class="menu_img">
+                                    <label class="menu_name">돈 가 스</label>
+                                    <label class="menu_price">7,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn noodle" value="noodle" data-value="5000">
+                                    <img src="../img/일식_우동.png" class="menu_img">
+                                    <label class="menu_name">우 동</label>
+                                    <label class="menu_price">5,000원</label>
+                                </button>
+                            </div>
+                            <div class="menu_cell">
+                                <button type="button" class="menu_btn coconut" value="coconut" data-value="5000">
+                                    <img src="../img/일식_규동.png" class="menu_img">
+                                    <label class="menu_name">규 동 (소고기)</label>
+                                    <label class="menu_price">5,000원</label>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  c<!-- ontent_area "일식 메뉴" end -->
+            </div> <!-- modal 일식 end  -->
+        </div> <!-- wrap 일식 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
 </html>
