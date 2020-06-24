@@ -175,10 +175,10 @@
    
 }
 
+/* 텍스트 : 사이드메뉴 이름 */
 .side_menu_name {
     font-weight: 100;
     color: dimgrey;
-    /* margin-bottom: 10px; */
     margin-right: 20px;
     padding-bottom: 10px;
 
@@ -186,13 +186,23 @@
 }
 
 
-/* 상세메뉴 가격 */
+/* 텍스트 : 사이드메뉴 가격 */
 .side_menu_price {
     font-weight: bold;
     color: red;
     margin-bottom: 10px;
 
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 버튼 : 사이드메뉴 선택 */
+.side_menu_btn {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    border: none;
+    background-color: whitesmoke;
+    
 }
 
 
