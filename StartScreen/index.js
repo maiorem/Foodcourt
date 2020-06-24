@@ -11,7 +11,10 @@ $('.js-close-modal').click(function(){
 
 // 세부메뉴 오픈
 $('.js-click-modal_korea').click(function(){
-  $('.modal').addClass('modal-selectMenu');
+  $('#wrap_kiosk').addClass('modal-open');
+  // $('#menuTable_jap').css('display')=="none"
+  $('#menuTable_jap').hide();
+  
 });
 
 $('.js-click-modal_japan').click(function(){
@@ -34,3 +37,30 @@ $('js-click-modal_dessert').click(function(){
   $('.modal').addClass('modal-selectMenu');
 });
 
+
+
+$(document).ready(function(){
+
+  $('#koreafood').click(function(){
+    // $('#menuTable_jap').css('display')=="none"
+    // $('#menuTable_jap').hide();
+  });
+  
+  
+  
+  
+  
+  
+  
+    $('#btn1').click(function(){
+    
+      
+      $('#menuTalbe_jap').show();
+    
+    });
+  
+
+
+
+  });
+  
