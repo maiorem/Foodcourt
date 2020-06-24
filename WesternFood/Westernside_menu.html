@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side_menu_popup</title>
+
+    <link href="Westernside_menu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="content_pop_area">
+            <div id="content_pop_background">
+
+                <div id="select_menu">
+                    <div id="select_menu_img">
+                        <img src="img_western/등심스테이크.jpg">
+                    </div>
+                    <div id="menu_info">
+                        <h2 class="sub_title">등심스테이크</h2>
+                        <p class="info">조리시간: 15~20분<br>등심스테이크 설명</p>
+                    </div>
+                    <div id="select_count">
+                        <h2 class="side_text">수량</h2>
+                        <input type="number" min="1" max="9999" maxlength="4" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 1) ? (1/1) : this.value;">
+                        <h2 class="side_text">가격</h2>
+                        <h2 class="select_menu_price">36,000원</h2>
+                    </div>
+                </div>
+
+                <div id="side_menu">
+                    <h2 class="side_title"> ㅣ 사이드 메뉴</h2>
+                    <div id="side_menu_div">
+                        <div>
+                            <button type="button" class="side_menu_btn salad" value="salad" data-value="1000">
+                                <img src="img_western/사_감자샐러드.jpg" class="side_menu_img">
+                                <label class="side_menu_name">미니 샐러드</label>
+                                <label class="side_menu_price">3,500원</label>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="side_menu_btn mushroom_soup" value="mushroom_soup" data-value="4000">
+                                <img src="img_western/사_양송이스프.jpg" class="side_menu_img">
+                                <label class="side_menu_name">양송이스프</label>
+                                <label class="side_menu_price">4,000원</label>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="side_menu_btn garlicbread" value="garlicbread" data-value="2000">
+                                <img src="img_western/사_마늘빵.jpg" class="side_menu_img">
+                                <label class="side_menu_name">마늘빵</label>
+                                <label class="side_menu_price">2,000원</label>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div> <!-- side_menu end -->
+                
+                <div id="side_event_area">
+                    <input type="button" id="side_cancle" href="#" value="취 소">
+                    <input type="button" id="side_ok" href="#" value="확 인">
+                </div>
+
+            </div> <!-- content_pop_background end-->
+         </div>   <!-- content_pop_area end -->
+    </div>    <!-- wrap end-->
+
+
+
+    
+</body>
+</html>
