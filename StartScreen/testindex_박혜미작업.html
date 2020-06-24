@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Full Width/Height Modal</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="../Dessert/menu.css">
+    <link rel="stylesheet" href="pop.css">
+    
+</head>
+
+<body>
+
+    <div class="container"> 
+
+        <div class="header">
+            <img src="../img/food.PNG" id="logo">
+        </div>
+
+
+        <div class="content">
+
+            <button type="button" class="main_button btn js-click-modal" id="hall_btn">
+                
+                <img src="../img/hall.png" id="hall_img">
+                    
+            </button>
+
+            <button type="button" class="main_button btn js-click-modal" id="take_btn">
+                <img src="../img/takeout.png" id="take_img">
+            </button>
+
+                </div>
+
+      
+        
+    <!-- 대분류6개----------------------------------------- -->
+
+
+
+        <div class="modal">
+            
+            <div id="wrap">
+                <div class="header"><img src="../img/food.PNG" id="menulogo"></div>
+
+                <div class="content">
+
+                    <button type="button" class="menu js-click-modal_korea"><img src="../img/korea.PNG" alt="" id="korea"></button>
+                    <button type="button" class="menu"><img src="../img/japan.PNG" alt="" id="japan"></button>
+                    <button type="button" class="menu"><img src="../img/china.PNG" alt="" id="china"></button>
+                    <br>
+                    <button type="button" class="menu"><img src="../img/westem.PNG" alt=""
+                            id="westem"></button>
+                    <button type="button" class="menu"><img src="../img/asian.PNG" alt="" id="asian"></button>
+                    <button type="button" class="menu"><img src="../img/dessert.PNG" alt=""
+                            id="dessert"></button>
+
+                </div>
+
+                <div class="footer" style="text-align: center; margin-top: 50px;">
+                   
+                    <img src="../img/button2.PNG" class="js-close-modal previous" style="text-align: center; margin-left: 510px;">
+
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+    
+
+
+   
+    <!-- 키오스크 메뉴판시작----------------------------------- -->
+    <div id="wrap_kiosk">
+    <div class="modal">
+   
+        <div id="wrap">
+            <div id="title_area">
+                <div>
+                    <img src="../img/food.PNG" class="logo" id="logo">
+                </div>
+                <div id="menu_tab">
+                    <div id="menu_imges">
+                        <button type="button" class="menu_icon_btn"><img src="../img/korea.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/china.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/japan.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/westem.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/asian.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/dessert.png"></button>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="content_area">
+                <div id="content_background">
+                    <div id="menu_div" >
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/티라미수 (1).png" class="menu_img">
+                                <label class="menu_name">티 라 미 수</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/팥빙수.png" class="menu_img">
+                                <label class="menu_name">팥 빙 수</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/요거트.png" class="menu_img">
+                                <label class="menu_name">요 거 트</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/프레즐.png" class="menu_img">
+                                <label class="menu_name">프 레 즐</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/쿠키 (2).png" class="menu_img">
+                                <label class="menu_name">쿠 키</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn">
+                                <img src="img_dessert/아이스크림.png" class="menu_img">
+                                <label class="menu_name">아 이 스 크 림</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- content_area end -->
+                  
+              
+                  
+             
+            
+            
+           
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src="index.js"></script>
+        <script src="pop.js"></script>
+</body>
+
+</html>
