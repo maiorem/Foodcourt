@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side_menu_popup</title>
+
+    <link href="side_menu.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="content_pop_area">
+            <div id="content_pop_background">
+
+                <div id="select_menu">
+                    <div id="select_menu_img">
+                        <img src="../dessert/Img_dessert/프레즐.png">
+                    </div>
+                    <div id="menu_info">
+                        <h2 class="sub_title">프레즐</h2>
+                        <p class="info">조리시간: 15~20분<br>프레즐 설명</p>
+                    </div>
+                    <div id="select_count">
+                        <h2 class="side_text">수량</h2>
+                        <input type="number" min="1" max="9999" maxlength="4" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 1) ? (1/1) : this.value;">
+                        <h2 class="side_text">가격</h2>
+                        <h2 class="select_menu_price">5,000원</h2>
+                    </div>
+                </div>
+
+                <div id="side_menu">
+                    <h2 class="side_title"> ㅣ 사이드 메뉴</h2>
+                    <table id="side_menu_table" >
+                        <tr>
+                            <td>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (9).png" class="side_menu_img">
+                                    <label class="side_menu_name">아메리카노</label>
+                                    <label class="side_menu_price">2,000원</label>
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (1).png" class="side_menu_img">
+                                    <label class="side_menu_name">ICE아메리카노</label>
+                                    <label class="side_menu_price">2,000원</label>
+                                </button>
+                            </td>
+                            <td>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (2).png" class="side_menu_img">
+                                    <label class="side_menu_name">오렌지주스</label>
+                                    <label class="side_menu_price">2,000원</label>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="button" class="side_menu_btn">
+                                    <img src="../dessert/Img_dessert/ㅎ사이드음료 (6).png" class="side_menu_img">
+                                    <label class="side_menu_name">콜라/사이다</label>
+                                    <label class="side_menu_price">1,500원</label>
+                                </button>
+                            </td>
+                            <td><img src=""></td>
+                            <td><img src=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src=""></td>
+                            <td><img src=""></td>
+                            <td><img src=""></td>
+                        </tr>
+
+                    </table>
+
+                </div> <!-- side_menu end -->
+                
+                <div id="side_event_area">
+                    <input type="button" id="side_cancle" href="#" value="취 소">
+                    <input type="button" id="side_ok" href="#" value="확 인">
+                </div>
+
+            </div> <!-- content_pop_background end-->
+         </div>   <!-- content_pop_area end -->
+    </div>    <!-- wrap end-->
+
+
+
+    
+</body>
+</html>
