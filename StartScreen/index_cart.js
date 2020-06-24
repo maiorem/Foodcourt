@@ -3,10 +3,9 @@
 var shopingList = [];
 
 
-function Cart(selectSort, selectMenu, sAmount, sPrice) {
+function Cart(selectSort, selectMenu, sPrice) {
     this.sort = selectSort;
     this.menu = selectMenu;
-    this.amount = sAmount;
     this.price = sPrice;
 }
 
@@ -17,10 +16,10 @@ function createShoping() {
 
     var sort = "dessert";
     var menu = $('.menu_btn').val();
-    var amount=1;
     var price =buttom.getAttribute("data-value");
 
-    shopingList.push(new Cart(sort, menu, amount, price));
+
+    shopingList.push(new Cart(sort, menu, price));
 
     cart_list();
     setLocal();
@@ -33,17 +32,28 @@ function getSumPrice() {
 }
 
 
+function deleteCart(idx) {
+    shopingList.splice(idx, 1);
+    cart_list();
+    setLocal();
+}
+
 
 
 function cart_list() {
+    var delBtn = document.createElement("button");
+    delBtn.innerText="x";
+    delBtn.addEventListener("click", deleteCart);
+
     var list = '';
     list+='<table id="cart_listb">';
     for (var idx = 0; idx < shopingList.length; idx++) {
         list += '<tr>     <td>' + idx + '</td>';
         list += '     <td>' + shopingList[idx].sort + '</td>';
         list += '     <td>' + shopingList[idx].menu + '</td>';
-        list += '     <td>' + shopingList[idx].amount + '</td>';
-        list += '     <td>' + shopingList[idx].price + '</td></tr>';
+        list += '     <td> <select><option>1</option><option>2</option><option>3</option><option>4</option></select></td>';
+        list += '     <td>' + shopingList[idx].price + '</td>';
+        list += '     <td> <a href="javascript:deledteCart('+idx+')>삭제</a> </td></tr>';
     }   
     list+='</table>';
     $('#cart_listb').html(list);
