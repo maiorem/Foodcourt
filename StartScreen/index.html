@@ -15,27 +15,40 @@
 
 <body>
 
-    <div class="container">
-        <div id="logo">
-            <img src="../img/food.PNG">
-        </div>
-        <div id="choice1" class="abc1">
-            <button type="button" class="main_button btn js-click-modal here" id="hall_button"><img
-                    src="../img/pngwing.com.png" id="hall"></button>
+    <div class="container"> <!-- wrap -->
 
+        <div class="header">
+            <img src="../img/food.PNG" id="logo">
         </div>
-        <div id="choice2" class="abc2">
-            <button type="button" class="main_button btn js-click-modal takeout" id="takeout_button"><img
-                    src="../img/saf.png" id="takeout"></button>
 
-        </div>
+
+        <div class="content">
+
+            <button type="button" class="main_button btn js-click-modal" id="hall_btn">
+                
+                <img src="../img/hall.png" id="hall_img">
+                    
+            </button>
+
+            <button type="button" class="main_button btn js-click-modal" id="take_btn">
+                <img src="../img/takeout.png" id="take_img">
+            </button>
+
+                </div>
+
+      
+        
+    <!-- 대분류6개----------------------------------------- -->
+
+
+
         <div class="modal">
             <div id="menuselector">
                 <div class="header"><img src="../img/food.PNG" id="menulogo"></div>
 
                 <div class="content">
 
-                    <button type="button" class="menu"><img src="../img/korea.PNG" alt="" id="korea"></button>
+                    <button type="button" class="menu js-click-modal"><img src="../img/korea.PNG" alt="" id="korea"></button>
                     <button type="button" class="menu"><img src="../img/japan.PNG" alt="" id="japan"></button>
                     <button type="button" class="menu"><img src="../img/china.PNG" alt="" id="china"></button>
                     <br>
@@ -55,9 +68,96 @@
             </div>
  
         </div>
-        <div id="footer_area">
+    </div> <!-- wrap 끝-->
+
+
+
+    <!-- 키오스크 메뉴판시작----------------------------------- -->
+    <div class="modal">
+    <div id="kiosk"> 
+        <div id="content">
+            <div id="title_area">
+                <div>
+                    <img src="../img/food.png" class="logo" id="logo">
+                </div>
+                <div id="menu_tab">
+                    <div id="menu_imges">
+                        <img src="../img/korea.png">
+                        <img src="../img/china.png">
+                        <img src="../img/japan.png">
+                        <img src="../img/westem.png">
+                        <img src="../img/asian.png">
+                        <img src="../img/dessert.png">
+                    </div>
+                </div>
+            </div>
+
+            <div id="content_area">
+                <div id="content_background">
+                    <div id="icons">
+                        <table id="menu_table" >
+                            <!-- <tr>
+                                <td class="menu_cell">
+                                    <img src="../img_dessert/밀푀유.png" class="menu_img">
+                                    <label class="menu_name">밀푀유</label>
+                                    <label class="menu_price">5,000원</label>
+                                    
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../img_dessert/타르트 (3).png" class="menu_img">
+                                    <label class="menu_name">타르트</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../img_dessert/생크림케이크.png" class="menu_img">
+                                    <label class="menu_name">생크림케이크</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td class="menu_cell">
+                                    <img src="img_dessert/티라미수 (1).png" class="menu_img">
+                                    <label class="menu_name">티 라 미 수</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="img_dessert/팥빙수.png" class="menu_img">
+                                    <label class="menu_name">팥 빙 수</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="img_dessert/요거트.png" class="menu_img">
+                                    <label class="menu_name">요 거 트</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu_cell">
+                                    <img src="img_dessert/프레즐.png" class="menu_img">
+                                    <label class="menu_name">프 레 즐</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="img_dessert/쿠키 (2).png" class="menu_img">
+                                    <label class="menu_name">쿠 키</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="img_dessert/아이스크림.png" class="menu_img">
+                                    <label class="menu_name">아 이 스 크 림</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>    
+
+
+        <!-- <div id="footer_area">
             <div id="cartin">
                 <table id="cart_list">
+                    <tbody>
                     <tr>
                         <th>번호</th>
                         <th>분류</th>
@@ -107,6 +207,7 @@
                         <td></td>
                         <td></td>
                     </tr>
+                </tbody>
                 </table>
             </div>
             <div id="event_area">
@@ -116,7 +217,7 @@
             </div>
         </div>
 
-    </div>
+    </div> --> 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="index.js"></script>
 
