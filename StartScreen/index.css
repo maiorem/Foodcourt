@@ -73,3 +73,40 @@ input[type=button] {
 #payment {
     background-color: orange;
 }
+
+#hall{ 
+    float: left;
+    margin: 10px 0 16px -12px;
+    width: 195px;
+    height: 140px;
+    /* border-radius: 20px; */
+}
+
+
+
+#takeout{
+    margin: 10px 10px 0px 10px;
+    width:150px; 
+    height:150px;
+    /* border-radius: 20px; */
+}
+
+.abc1{  
+    border: 20px solid dimgray;
+    border-radius: 20px;
+    width:168px;
+    height:188px;
+    text-align: center;
+    float: left;
+    margin-left: 250px;
+}
+
+.abc2{
+    border: 20px solid dimgray;
+    border-radius: 20px;
+    width:168px;
+    height:188px;
+    text-align: center;
+    float: right;
+    margin-right: 250px;
+}
