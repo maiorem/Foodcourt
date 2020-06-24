@@ -15,20 +15,33 @@
 
 <body>
 
-    <div class="container">
-        <div id="logo">
-            <img src="../img/food.PNG">
-        </div>
-        <div id="choice1" class="abc1">
-            <button type="button" class="main_button btn js-click-modal here" id="hall_button"><img
-                    src="../img/pngwing.com.png" id="hall"></button>
+    <div class="container"> <!-- wrap -->
 
+        <div class="header">
+            <img src="../img/food.PNG" id="logo">
         </div>
-        <div id="choice2" class="abc2">
-            <button type="button" class="main_button btn js-click-modal takeout" id="takeout_button"><img
-                    src="../img/saf.png" id="takeout"></button>
 
-        </div>
+
+        <div class="content">
+
+            <button type="button" class="main_button btn js-click-modal" id="hall_btn">
+                
+                <img src="../img/hall.png" id="hall_img">
+                    
+            </button>
+
+            <button type="button" class="main_button btn js-click-modal" id="take_btn">
+                <img src="../img/takeout.png" id="take_img">
+            </button>
+
+                </div>
+
+      
+        
+
+
+
+
         <div class="modal">
             <div id="menuselector">
                 <div class="header"><img src="../img/food.PNG" id="menulogo"></div>
@@ -55,7 +68,9 @@
             </div>
  
         </div>
-        <div id="footer_area">
+    </div> <!-- wrap 끝-->
+        
+        <!-- <div id="footer_area">
             <div id="cartin">
                 <table id="cart_list">
                     <tbody>
@@ -118,7 +133,7 @@
             </div>
         </div>
 
-    </div>
+    </div> --> 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="index.js"></script>
 

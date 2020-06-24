@@ -7,26 +7,11 @@
     
   }
   
-  #logo {
-    width: 680px;
-    height: 360px;
-    margin: 10px auto;
-  }
-  
-  #logo>img {
+  #logo{
     width: 659px;
     height: 356px;
   }
-  
-  #footer_area {
-    width: 1024px;
-    height: 200px;
-    background-color:beige;
-    margin-top: 200px;
-    border-top: 1px solid lightgray;
-    display: none;
-  
-  }
+
   
   #cartin {
     width: 800px;
@@ -74,40 +59,37 @@
     background-color: white;
     border: none;
   }
+
+
+
   
-  #hall{ 
-    float: left;
-    margin: auto;
-    width: 130px;
-    height: 140px;
-    /* border-radius: 20px; */
-  }
-  
-  
-  
-  #takeout{
-    margin: auto;
-    width: 130px;
-    height: 140px;
-    /* border-radius: 20px; */
-  }
-  
-  .abc1{  
+  #hall_btn{  
     width:168px;
     height:188px;
-    text-align: center;
-    float: left;
-    margin-left: 250px;
+   padding-right: 120px;
+   
+    margin-right: 50px;
+  }
+  #hall_img{
+    width: 105px;
+    height: 140px;
+    margin-right: 100px;
+    margin-bottom: 30px;
   }
   
-  .abc2{
+  #take_btn{
     width:168px;
     height:188px;
-    text-align: center;
-    float: right;
-    margin-right: 250px;
+    padding-right: 120px;
+    margin-left: 50px;
   }
   
+  #take_img{
+    width: 105px;
+    height: 140px;
+    margin-right: 110px;
+    margin-bottom: 30px;
+  }
   .container > .btn {
     margin: 60px;
     padding: 20px 40px;
@@ -147,7 +129,7 @@
     border: 15px solid dimgray;
     border-radius: 25px;
     margin: 20px 0;
-    color: #fff;
+
     position: relative;
     transition: all .4s ease;
     cursor: pointer;
