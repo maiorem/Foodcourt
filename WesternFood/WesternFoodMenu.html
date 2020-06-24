@@ -1,67 +1,188 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Western Food Menu</title>
-    <link rel="stylesheet" href="WesternFoodMenu.css">
+    <title>menu</title>
+    <link href="WesternFoodMenu.css" rel="stylesheet">
+    <!-- <link href="indexCopy.css" rel="stylesheet" > -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    
+
 </head>
-
 <body>
-    <div id="wrap">
-        <div id="title_area">
-            <img src="images/kiosk/food.png">
-            <div class="menuOpt">
-                <img src="images/kiosk/dessert.PNG">
-                <img src="images/kiosk/asian.PNG">
-                <img src="images/kiosk/westem.PNG">
-                <img src="images/kiosk/china.PNG">
-                <img src="images/kiosk/japan.PNG">
-                <img src="images/kiosk/korea.PNG">
-            </div>
-        </div>
+    <!-- 메뉴판 화면 로고 이미지 95 * 유동값 / 
+        메뉴 이동 아이콘 크기 70 * 90 / 
+        레이아웃 Content_area  사이즈 658 * 920
+        메뉴판 화면 Content_area > 메뉴 이미지 127 * 197 / 
+        장바구니 190 * 978 / 
+        결제 버튼 49 * 206 -->
 
-        <div id="content_area">
-            <div id="menuList">
-                <div id="menuTable">
-                    <div class="menuSelect">
-                        <div id="card"><img src="images/moomin_1.png"><br>돌솥비빔밥<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>냉면<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>된장찌개<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>김치찌개<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>순두부찌개<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>백반<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>김치찌개<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>순두부찌개<div id="price">5,000</div>
-                        </div>
-                        <div id="card"><img src="images/moomin_1.png"><br>백반<div id="price">5,000</div>
-                        </div>
+    <div id="kiosk"> 
+        <div id="wrap">
+            <div id="title_area">
+                <div>
+                    <img src="../img/food.png" class="logo" id="logo">
+                </div>
+                <div id="menu_tab">
+                    <div id="menu_imges">
+                        <img src="../img/korea.png">
+                        <img src="../img/china.png">
+                        <img src="../img/japan.png">
+                        <img src="../img/westem.png">
+                        <img src="../img/asian.png">
+                        <img src="../img/dessert.png">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="footer_area">
-            <!-- <label>번호</label>
-                <label>분류</label>
-                <label>메뉴</label>
-                <label>수량</label>
-                <label>금액</label> -->
-        </div>
+            <div id="content_area">
+                <div id="content_background">
+                    <div id="icons">
+                        <table id="menu_table" >
+                            <!-- <tr>
+                                <td class="menu_cell">
+                                    <img src="../img_dessert/밀푀유.png" class="menu_img">
+                                    <label class="menu_name">밀푀유</label>
+                                    <label class="menu_price">5,000원</label>
+                                    
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../img_dessert/타르트 (3).png" class="menu_img">
+                                    <label class="menu_name">타르트</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../img_dessert/생크림케이크.png" class="menu_img">
+                                    <label class="menu_name">생크림케이크</label>
+                                    <label class="menu_price">5,000원</label>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td class="menu_cell">
+                                    <img src="../WesternFood/img_western/등심스테이크.jpg" class="menu_img">
+                                    <label class="menu_name">등심 스테이크</label>
+                                    <label class="menu_price">36,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../WesternFood/img_western/안심스테이크.jpg" class="menu_img">
+                                    <label class="menu_name">안심 스테이크</label>
+                                    <label class="menu_price">35,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../WesternFood/img_western/토마토파스타.jpg" class="menu_img">
+                                    <label class="menu_name">토마토 파스타</label>
+                                    <label class="menu_price">19,000원</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu_cell">
+                                    <img src="../WesternFood/img_western/크림파스타.jpg" class="menu_img">
+                                    <label class="menu_name">크림 파스타</label>
+                                    <label class="menu_price">19,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../WesternFood/img_western/리코타샐러드.jpg" class="menu_img">
+                                    <label class="menu_name">리코타 치즈 샐러드</label>
+                                    <label class="menu_price">21,000원</label>
+                                </td>
+                                <td class="menu_cell">
+                                    <img src="../WesternFood/img_western/시저샐러드.jpg" class="menu_img">
+                                    <label class="menu_name">시저 샐러드</label>
+                                    <label class="menu_price">19,000원</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
-        <div id="event_area"></div>
+            <!-- <div id="footer_area">
+                <div id="cartin">
+                    <table id="cart_list">
+                        <tr>
+                            <th>번호</th>
+                            <th>분류</th>
+                            <th>메뉴</th>
+                            <th>수량</th>
+                            <th>금액</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="event_area">
+                    <input type="button" id="return_startscreen" href="#" value="처음으로">
+                    <input type="button" id="payment" href="#" value="결제하기">
 
-        <div id="paypop_area"></div>
-    </div>
+                </div>
+            </div> -->
+
+
+         </div> <!--wrap end -->
+
+         <div>
+            <div id="card_in">
+                 <H4>카드</H4>
+                 <div class="card_box"></div>   
+            </div>
+            <div id="receipt">
+                <H4>영수증</H4>
+                <div class="receipt_box"></div>   
+           </div>
+
+         </div>
+
+
+
+    </div> <!--kiosk end -->
+    
+
+
+
+
+
+    
 </body>
-
 </html>
