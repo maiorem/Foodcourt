@@ -44,7 +44,10 @@ div.msg_waitingNum {
     line-height: 20px;
 }
 
-#bill_img {
+#bill_img>img{
+    margin: 50px auto;
+    width: 100px;
+    height: 100px;
     text-align: center;
     line-height: 100px;
 
