@@ -1,4 +1,5 @@
-<!-- 카드결제 대기 팝업 + 대기번호 팝업 -->
+<!-- 카드결제 대기 팝업 + 대기번호 팝업 
+  : 결제중 안내 5초 후  대기번호 팝업 5초동안(완료) 초기화면으로 돌아감(구현해야함)-->
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -7,6 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>카드결제에서 대기번호로</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="cardPlusWaiting_card.css">
   <link rel="stylesheet" href="cardPlusWaiting_w.css">
   <script src="cardPlusWaiting.js"></script>
@@ -14,6 +16,7 @@
 
 <body>
 
+  <!-- 카드 결제 중 안내 -->
   <div id="completeWrap">
     <div id="wrap01">
       <div class="card">
@@ -52,6 +55,7 @@
 
     <!-- </div> -->
 
+    <!-- 결제 완료 후 대기번호 알림 팝업 -->
     <div id="wrap02">
       <div id="pop_waiting">
           <div class="msg_header">결제</div>

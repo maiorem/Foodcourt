@@ -15,10 +15,10 @@ window.onload = function () {
     // When the user clicks on the button, open the modal 
     setTimeout(function () {
       wrap02.style.display = "block";
-    }, 1000 * 2);
+    }, 1000 * 5);
     setTimeout(function () {
       wrap01.style.display = "none";
-    }, 1000 * 2);
+    }, 1000 * 5);
   
   
     //  btn.onclick = function() {
@@ -28,7 +28,7 @@ window.onload = function () {
     // When the user clicks on <span> (x), close the modal
     setTimeout(function () {
       wrap02.style.display = "none";
-    }, 1000*15);
+    }, 1000*10);
   
   
     // span.onclick = function () {
