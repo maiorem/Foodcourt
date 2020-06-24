@@ -43,7 +43,7 @@
 
 
 
-        <div class="modal">
+        <!-- <div class="modal"> -->
             
             <div id="wrap">
                 <div class="header"><img src="../img/food.PNG" id="menulogo"></div>
@@ -69,7 +69,7 @@
                 </div>
             </div>
  
-        </div>
+        <!-- </div> -->
     </div>
     
 
@@ -77,7 +77,7 @@
    
     <!-- 키오스크 메뉴판시작----------------------------------- -->
     <div id="wrap_kiosk">
-    <div class="modal">
+    <!-- <div class="modal"> -->
    
         <div id="wrap">
             <div id="title_area">
@@ -86,56 +86,110 @@
                 </div>
                 <div id="menu_tab">
                     <div id="menu_imges">
-                        <button type="button" class="menu_icon_btn"><img src="../img/korea.png"></button>
-                        <button type="button" class="menu_icon_btn"><img src="../img/china.png"></button>
-                        <button type="button" class="menu_icon_btn"><img src="../img/japan.png"></button>
-                        <button type="button" class="menu_icon_btn"><img src="../img/westem.png"></button>
-                        <button type="button" class="menu_icon_btn"><img src="../img/asian.png"></button>
-                        <button type="button" class="menu_icon_btn"><img src="../img/dessert.png"></button>
+                        <!-- ◆ 박혜미수정 : 메뉴아이콘 class, value값 추가 -->
+                        <button type="button" class="menu_icon_btn korea" value="korea"><img src="../img/korea.png"></button>
+                        <button type="button" class="menu_icon_btn china" value="china"><img src="../img/china.png"></button>
+                        <button type="button" class="menu_icon_btn japan" value="japan"><img src="../img/japan.png"></button>
+                        <button type="button" class="menu_icon_btn westem" value="westem"><img src="../img/westem.png"></button>
+                        <button type="button" class="menu_icon_btn asian" value="asian"><img src="../img/asian.png"></button>
+                        <button type="button" class="menu_icon_btn dessert" value="dessert"><img src="../img/dessert.png"></button>
                     </div>
                 </div>
             </div>
         
+
+            <!-- ◆ 박혜미수정 : 디저트메뉴  가격수정, class, value값 추가--------------------------------------------->
             <div id="content_area">
                 <div id="content_background">
                     <div id="menu_div" >
                         <div class="menu_cell">
-                            <button type="button" class="menu_btn">
+                            <button type="button" class="menu_btn tiramisu" value="tiramisu" data-value="5000"">
                                 <img src="img_dessert/티라미수 (1).png" class="menu_img">
                                 <label class="menu_name">티 라 미 수</label>
                                 <label class="menu_price">5,000원</label>
                             </button>
                         </div>
                         <div class="menu_cell">
-                            <button type="button" class="menu_btn">
+                            <button type="button" class="menu_btn bingsu" value="bingsu" data-value="6000"">
                                 <img src="img_dessert/팥빙수.png" class="menu_img">
                                 <label class="menu_name">팥 빙 수</label>
-                                <label class="menu_price">5,000원</label>
+                                <label class="menu_price">6,000원</label>
                             </button>
                         </div>
                         <div class="menu_cell">
-                            <button type="button" class="menu_btn">
+                            <button type="button" class="menu_btn yogurt" value="yogurt" data-value="4000"">
                                 <img src="img_dessert/요거트.png" class="menu_img">
                                 <label class="menu_name">요 거 트</label>
-                                <label class="menu_price">5,000원</label>
+                                <label class="menu_price">4,000원</label>
                             </button>
                         </div>
                         <div class="menu_cell">
-                            <button type="button" class="menu_btn">
+                            <button type="button" class="menu_btn pretzels" value="pretzels" data-value="3000"">
                                 <img src="img_dessert/프레즐.png" class="menu_img">
                                 <label class="menu_name">프 레 즐</label>
-                                <label class="menu_price">5,000원</label>
+                                <label class="menu_price">3,000원</label>
                             </button>
                         </div>
                         <div class="menu_cell">
-                            <button type="button" class="menu_btn">
+                            <button type="button" class="menu_btn cookie" value="cookie" data-value="2000"">
                                 <img src="img_dessert/쿠키 (2).png" class="menu_img">
                                 <label class="menu_name">쿠 키</label>
+                                <label class="menu_price">2,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn icecream" value="아이스크림" data-value="1500"">
+                                <img src="img_dessert/아이스크림.png" class="menu_img">
+                                <label class="menu_name">아 이 스 크 림</label>
+                                <label class="menu_price">5,000원</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- content_area end -->
+
+
+            <!-- ◆ 박혜미추가 : 아시안메뉴 ------------------------------------------------------------------------>
+            <div id="content_area">
+                <div id="content_background">
+                    <div id="menu_div" >
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn tiramisu" value="tiramisu" data-value="5000"">
+                                <img src="img_dessert/티라미수 (1).png" class="menu_img">
+                                <label class="menu_name">팟 타 이</label>
                                 <label class="menu_price">5,000원</label>
                             </button>
                         </div>
                         <div class="menu_cell">
-                            <button type="button" class="menu_btn">
+                            <button type="button" class="menu_btn bingsu" value="bingsu" data-value="6000"">
+                                <img src="img_dessert/팥빙수.png" class="menu_img">
+                                <label class="menu_name">커 리</label>
+                                <label class="menu_price">6,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn yogurt" value="yogurt" data-value="4000"">
+                                <img src="img_dessert/요거트.png" class="menu_img">
+                                <label class="menu_name">쏨 땀</label>
+                                <label class="menu_price">4,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn pretzels" value="pretzels" data-value="3000"">
+                                <img src="img_dessert/프레즐.png" class="menu_img">
+                                <label class="menu_name">프 레 즐</label>
+                                <label class="menu_price">3,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn cookie" value="cookie" data-value="2000"">
+                                <img src="img_dessert/쿠키 (2).png" class="menu_img">
+                                <label class="menu_name">쿠 키</label>
+                                <label class="menu_price">2,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn icecream" value="아이스크림" data-value="1500"">
                                 <img src="img_dessert/아이스크림.png" class="menu_img">
                                 <label class="menu_name">아 이 스 크 림</label>
                                 <label class="menu_price">5,000원</label>
@@ -151,7 +205,7 @@
             
             
            
-    </div> 
+    <!-- </div>  -->
 
 
 
