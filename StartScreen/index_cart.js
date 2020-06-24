@@ -12,15 +12,17 @@ function Cart(selectSort, selectMenu, sAmount, sPrice) {
 
 
 function createShoping() {
-    var sort=$();
-    var menu=$();
-    var amount=$();
-    var price=$();
-    
-    shopingList.push(new Cart(sort, menu, amount, price));
-    createList();
-    setLocal();
-    return false;
+    $('.btn').click(function(){
+        var sort="korean";
+        var menu=$('.tiraminu').val();
+        var amount=amountSelect()+1;
+        var price=$('.tiraminu').price;
+
+        shopingList.push(new Cart(sort, menu, amount, price));
+        cart_list();
+        setLocal();
+        
+     })
 
 }
 
@@ -70,11 +72,15 @@ function setLocal() {
 $(document).ready(function () {
  
           
-    initStore();
-    createList();
+    // initStore();
+    // createList();
 
-    $('#createform').submit(createShoping);
-    
+    // $('#createform').submit(createShoping);
+    var buttom = document.querySelector(".tiramisu");
+    var dataValue = buttom.getAttribute("data-value");
+
+    alert(dataValue);
+
 
 });
 
