@@ -28,144 +28,91 @@
                 </div>
                 <div id="menu_tab">
                     <div id="menu_imges">
-                        <img src="../img/korea.png">
-                        <img src="../img/china.png">
-                        <img src="../img/japan.png">
-                        <img src="../img/westem.png">
-                        <img src="../img/asian.png">
-                        <img src="../img/dessert.png">
+                        <button type="button" class="menu_icon_btn"><img src="../img/korea.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/china.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/japan.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/westem.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/asian.png"></button>
+                        <button type="button" class="menu_icon_btn"><img src="../img/dessert.png"></button>
                     </div>
                 </div>
             </div>
-
+        
             <div id="content_area">
                 <div id="content_background">
-                    <div id="icons">
-                        <table id="menu_table" >
+                    <div id="menu_div" >
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn" value='bibimbap' price='8000'>
+                                <img src="Img_korean/bibimbap.jpg" class="menu_img">
+                                <label class="menu_name">돌솥비빔밥</label>
+                                <label class="menu_price">8,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn" value='noodle' price='7000'>
+                                <img src="Img_korean/noodle.png" class="menu_img">
+                                <label class="menu_name">냉면</label>
+                                <label class="menu_price">7,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn" value='soysoup' price='6500'>
+                                <img src="Img_korean/soysoup.png" class="menu_img">
+                                <label class="menu_name">된장찌개</label>
+                                <label class="menu_price">6,500원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn" value='kimchi' price='6500'>
+                                <img src="Img_korean/kimchi.png" class="menu_img">
+                                <label class="menu_name">김치찌개</label>
+                                <label class="menu_price">6,500원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn" value='tofu' price='7000'>
+                                <img src="Img_korean/tofu.png" class="menu_img">
+                                <label class="menu_name">순두부찌개</label>
+                                <label class="menu_price">7,000원</label>
+                            </button>
+                        </div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn" value='set' price='12000'>
+                                <img src="Img_korean/set.PNG" class="menu_img">
+                                <label class="menu_name">백반정식</label>
+                                <label class="menu_price">12,000원</label>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- content_area end -->
+        
+        
+            <div id="footer_area">
+                <div id="cartin">
+                    <div id="cart_head">
+                        <table id="cart_head_table">
                             <tr>
-                                <td class="menu_cell">
-                                    <img src="Img_korean/bibimbap.jpg" class="menu_img">
-                                    <label class="menu_name">돌솥비빔밥</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="Img_korean/noodle.png" class="menu_img">
-                                    <label class="menu_name">냉면</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="Img_korean/soysoup.png" class="menu_img">
-                                    <label class="menu_name">된장찌개</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="menu_cell">
-                                    <img src="Img_korean/kimchi.png" class="menu_img">
-                                    <label class="menu_name">김치찌개</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="Img_korean/tofu.png" class="menu_img">
-                                    <label class="menu_name">순두부찌개</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
-                                <td class="menu_cell">
-                                    <img src="Img_korean/set.PNG" class="menu_img">
-                                    <label class="menu_name">백반정식</label>
-                                    <label class="menu_price">5,000원</label>
-                                </td>
+                                <th>번호</th>
+                                <th>분류</th>
+                                <th>메뉴</th>
+                                <th>수량</th>
+                                <th>금액</th>
                             </tr>
                         </table>
                     </div>
-                </div>
-            </div>
-
-            <!-- <div id="footer_area">
-                <div id="cartin">
                     <table id="cart_list">
-                        <tr>
-                            <th>번호</th>
-                            <th>분류</th>
-                            <th>메뉴</th>
-                            <th>수량</th>
-                            <th>금액</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
                     </table>
                 </div>
                 <div id="event_area">
-                    <input type="button" id="return_startscreen" href="#" value="처음으로">
-                    <input type="button" id="payment" href="#" value="결제하기">
-
+                    <input type="button" id="return_startscreen" href="#" value="처음으로" class='home'>
+                    <input type="button" id="payment" href="#" value="결제" class='payment'>
+        
                 </div>
-            </div> -->
-
-
-         </div> <!--wrap end -->
-
-         <div>
-            <div id="card_in">
-                 <H4>카드</H4>
-                 <div class="card_box"></div>   
             </div>
-            <div id="receipt">
-                <H4>영수증</H4>
-                <div class="receipt_box"></div>   
-           </div>
-
-         </div>
-
-
-
-    </div> <!--kiosk end -->
-    
-
-
-
-
-
-    
+        
+        
+        
+            </div> <!--wrap end -->
 </body>
 </html>

@@ -20,7 +20,7 @@
     border-radius: 15px;
 }
 .inside{
-    width: 660px;
+    width: 650px;
     height: 670px;
     margin: 0 auto;
     position: relative;
@@ -117,9 +117,10 @@ ul>li:nth-child(3){
 }
 button.togo, button.cancel{
     background-color: dimgray;
+    border: 1px solid dimgray;
 }
 button.hall, button.credit{
-    border-color: orange;
+    border: 1px solid orange;
     background-color: orange;
 
     float: right;
