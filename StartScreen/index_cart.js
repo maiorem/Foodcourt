@@ -13,12 +13,12 @@ function Cart(selectSort, selectMenu, sAmount, sPrice) {
 
 function createShoping() {
 
-    var button = document.querySelector(".menu_btn");
+    var buttom = document.querySelector(".menu_btn");
 
     var sort = "dessert";
     var menu = $('.menu_btn').val();
     var amount=1;
-    var price =button.getAttribute("data-value");
+    var price =buttom.getAttribute("data-value");
 
     shopingList.push(new Cart(sort, menu, amount, price));
 
