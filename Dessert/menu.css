@@ -6,64 +6,6 @@
 }
 
 
-#kiosk {
-    width: 1084px;
-    height: 1100px;
-    background-color: dimgray;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
-}
-
-#card_in {
-    width: 150px;
-    height: 30px;
-    size: 3em;
-    color: white;
-    /* background-color: turquoise; */
-
-    position: absolute;
-    top:850px;
-    right: 100px;
-
-    float: left;
-}
-
-#receipt {
-    width: 150px;
-    height: 30px;
-    size: 3em;
-    color: white;
-    /* background-color: turquoise; */
-
-    position: absolute;
-    top:850px;
-    right: 10px;
-}
-
-.card_box {
-    width: 50px;
-    height: 30px;
-    background-color: black;
-
-    position: absolute;
-    top:850px;
-    right: 10px;
-}
-
-.receipt_box {
-    width: 50px;
-    height: 30px;
-    background-color: black;
-
-    position: absolute;
-    top:850px;
-    right: 10px;
-}
-
 /* ------------------------------------------------ */
 /* 키오스크 화면프레임 */
 #wrap {
@@ -73,8 +15,8 @@
     background-color: white;
 
     margin: 0 auto;
-    position: relative;
-    top: 30px;
+    /* position: relative; */
+    /* top: 30px; */
 }
 
 /* 타이틀 nav 영역 */
@@ -87,7 +29,7 @@
 }
 
 /* 타이틀 - 메인로고 */
-.menuboard_logo {
+.logo {
     height: 90px;
 
     padding-top: 10px;
@@ -113,22 +55,13 @@
     margin-right: 50px;
 
     float: right;
-    
-    
 }
 
-/* 메뉴 아이콘 그룹 */
-#menu_imges {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-/* 메뉴 아이콘 */
-#menu_imges>img {
-    width: 80px;
-    height: 55px;
+/* 버튼 : 메뉴 아이콘 */
+.menu_icon_btn {
+    border: none;
+    margin: 0;
+    padding: 0;
 
     border-radius: 5px;
     background-color: white;
@@ -139,6 +72,23 @@
     padding-left: 10px;
     margin-left: 4px;
     margin-right: 4px;
+}
+
+/* 메뉴 아이콘 그룹 */
+#menu_imges {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+
+/* 메뉴 아이콘 */
+.menu_icon_btn>img {
+    width: 80px;
+    height: 55px;
+
+    
 }
 
 /* ------------------------------------------------ */
@@ -196,8 +146,6 @@
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
-    
-
 }
 
 
@@ -232,7 +180,11 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-
-
+/* 버튼 : 상세메뉴 선택 */
+.side_menu_btn {
+    font-size: 1em;
+    border: none;
+    background-color: white;
+}
 
 
