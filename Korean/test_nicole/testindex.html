@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nicole Test</title>
+
+  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel ="stylesheet" href="side_menu.css">
+    <link rel="stylesheet" href="indexhide.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="메뉴선택div버전.css">
+    
+    <link rel="stylesheet" href="pop.css">
+
+</head>
+
+<body>
+
+    <div class="container"> 
+
+        <div class="header">
+            <img src="../../img/food.PNG" id="logo">
+        </div>
+
+
+        <div class="content">
+
+            <button type="button" class="main_button btn js-click-modal" id="hall_btn">
+                
+                <img src="../../img/hall.png" id="hall_img">
+                    
+            </button>
+
+            <button type="button" class="main_button btn js-click-modal" id="take_btn">
+
+                <img src="../../img/takeout.png" id="take_img">
+
+            </button>
+
+        </div> <!-- content end -->
+
+      
+        
+    <!-- 대분류6개----------------------------------------- -->
+
+
+
+        <div class="modal">
+            
+            <div id="wrap">
+                <div class="header"><img src="../img/food.PNG" id="menulogo"></div>
+
+                <div class="content">
+
+                    <button type="button" class="menu js-click-modal_korea" id="koreafood"><img src="../img/korea.PNG" alt="" id="korea"></button>
+                    <button type="button" class="menu"><img src="../../img/japan.PNG" alt="" id="japan"></button>
+                    <button type="button" class="menu"><img src="../../img/china.PNG" alt="" id="china"></button>
+                    <br>
+                    <button type="button" class="menu"><img src="../../img/westem.PNG" alt=""id="westem"></button>
+                    <button type="button" class="menu"><img src="../../img/asian.PNG" alt="" id="asian"></button>
+                    <button type="button" class="menu"><img src="../../img/dessert.PNG" alt=""id="dessert"></button>
+
+                </div> <!-- content end -->
+
+                <div class="footer" style="text-align: center; margin-top: 50px;">
+                   
+                    <img src="../../img/button2.PNG" class="js-close-modal previous" style="text-align: center; margin-left: 510px;">
+
+                </div>
+            </div> <!-- wrap end -->
+ 
+        </div> <!-- modal end -->
+    </div> <!-- container end -->
+    
+
+
+   
+    <!-- 키오스크 메뉴판시작----------------------------------- -->
+    <div id="wrap_kiosk">
+    <div class="modal">
+   
+        <div id="wrap">
+            <div id="title_area">
+                <img src="../../img/food.PNG">
+                <div class="menuOpt">
+                    <img src="../../img/dessert.PNG" id="btn1">
+                    <img src="../../img/asian.PNG">
+                    <img src="../../img/china.PNG">
+                    <img src="../../img/japan.PNG">
+                    <img src="../../img/westem.PNG">
+                    <img src="../../img/korea.PNG">
+                </div> <!-- menuOpt end -->
+            </div> <!-- title_area end -->
+    
+            <div id="content_area">
+                <div id="menuList">
+
+
+                    <div id="menuTable_kor" style="display: inline;">
+                        <div class="menuSelect" id="kormenu">
+                            <div id="card"><img src="../../img/한식/bibimbap.jpg"><br>돌솥비빔밥<div id="price">8,000</div></div>
+                            <div id="card"><img src="../../img/한식/noodle.png"><br>냉면<div id="price">7,000</div></div>
+                            <div id="card"><img src="../../img/한식/soysoup.png"><br>된장찌개<div id="price">6,500</div></div>
+                            <div id="card"><img src="../../img/한식/kimchi.png"><br>김치찌개<div id="price">6,500</div></div>
+                            <div id="card"><img src="../../img/한식/tofu.png"><br>순두부찌개<div id="price">7,000</div></div>
+                            <div id="card"><img src="../../img/한식/set.PNG"><br>백반정식<div id="price">12,000</div></div>
+                        </div> <!-- menuSelect end -->
+                    </div> <!-- menuTable_kor end -->
+                
+                    <div id="menuTable_jap" style="display: inline;">
+                        <div class="menuSelect" id="japmenu">
+                            <div id="card"><img src="../../img/일식/일식_연어.png"><br>사케동<div id="price">10,000</div></div>
+                            <div id="card"><img src="../../img/일식/일식_장어.png"><br>우나기동<div id="price">10,000</div></div>
+                            <div id="card"><img src="../../img/일식/일식_닭.png"><br>가라아게동<div id="price">8,000</div></div>
+                            <div id="card"><img src="../../img/일식/일식_규동.png"><br>규동<div id="price">8,000</div></div>
+                            <div id="card"><img src="../../img/일식/일식_우동.png"><br>우동<div id="price">8,000</div></div>
+                            <div id="card"><img src="../../img/일식/일식_돈가스.png"><br>돈가스<div id="price">8,000</div></div>
+                        </div> <!-- menuSelect end-->
+                    </div> <!-- menuTable_jap end-->
+
+                    <div id="menuTable_chi" style="display: inline;">
+                        <div class="menuSelect" id="chimenu">
+                            <div id="card"><img src="../../img/중식/stirfry.jpg"><br>볶음짬뽕<div id="price">7,000</div></div>
+                            <div id="card"><img src="../../img/중식/maratang.jpg"><br>마라탕<div id="price">8,000</div></div>
+                            <div id="card"><img src="../../img/중식/eggplants.jpg"><br>어향가지<div id="price">10,000</div></div>
+                            <div id="card"><img src="../../img/중식/qquabarou.webp"><br>꿔바로우<div id="price">15,000</div></div>
+                            <div id="card"><img src="../../img/중식/jisamsun.jpg"><br>지삼선<div id="price">8,000</div></div>
+                            <div id="card"><img src="../../img/중식/shirimp.jpg"><br>크림새우<div id="price">10,000</div></div>
+                        </div> <!-- menuSelect end-->
+                    </div> <!-- menuTable_chi end-->
+
+                    <div id="menuTable_wes" style="display: inline;">
+                        <div class="menuSelect" id="wesmenu">
+                            <div id="card"><img src="../../img/양식/등심스테이크.jpg"><br>등심 스테이크<div id="price">36,000</div></div>
+                            <div id="card"><img src="../../img/양식/안심스테이크.jpg"><br>안심 스테이크<div id="price">35,000</div></div>
+                            <div id="card"><img src="../../img/양식/토마토파스타.jpg"><br>토마토 파스타<div id="price">19,000</div></div>
+                            <div id="card"><img src="../../img/양식/크림파스타.jpg"><br>크림 파스타<div id="price">19,000</div></div>
+                            <div id="card"><img src="../../img/양식/리코타샐러드.jpg"><br>리코타 치즈 샐러드<div id="price">21,000</div></div>
+                            <div id="card"><img src="../../img/양식/시저샐러드.jpg"><br>시저 샐러드<div id="price">19,000</div></div>
+                        </div> <!-- menuSelect end-->
+                    </div> <!-- menuTable_wes end-->
+
+                </div> <!-- menuList end -->
+            </div> <!-- content_area end -->
+        </div> <!-- wrap end -->
+
+
+    <!-- 팝업 모달 시작 -->
+    <div id="overlay">
+
+
+
+        <!-- <div id="popup"> -->
+        <!-- <div id="close">X</div> -->
+        
+
+        <div id="content_pop_area">
+
+            <div id="content_pop_background">
+                <!-- <div id="close"></div> -->
+
+                <div id="select_menu">
+                    <div id="select_menu_img">
+                        <img src="../../img/디저트/프레즐.png">
+                    </div>
+                    <div id="menu_info">
+                        <h2 class="sub_title">프레즐</h2>
+                        <p class="info">조리시간: 15~20분<br>프레즐 설명</p>
+                    </div>
+                    <div id="select_count">
+                        <h2 class="side_text">수량</h2>
+                        <input type="number" min="1" max="9999" maxlength="4" oninput="this.value=this.value.slice(0,this.maxLength||1/1);this.value=(this.value   < 1) ? (1/1) : this.value;">
+                        <h2 class="side_text">가격</h2>
+                        <h2 class="select_menu_price">5,000원</h2>
+                    </div>
+                </div>
+
+                <div id="side_menu">
+                    <h2 class="side_title"> ㅣ 사이드 메뉴</h2>
+                    <div id="side_menu_div">
+                        <div>
+                            <button type="button" class="side_menu_btn">
+                                <img src="../../img/디저트/ㅎ사이드음료 (9).png" class="side_menu_img">
+                                <label class="side_menu_name">아메리카노</label>
+                                <label class="side_menu_price">2,000원</label>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="side_menu_btn">
+                                <img src="../../img/디저트/ㅎ사이드음료 (1).png" class="side_menu_img">
+                                <label class="side_menu_name">ICE아메리카노</label>
+                                <label class="side_menu_price">2,000원</label>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="side_menu_btn">
+                                <img src="../../img/디저트/ㅎ사이드음료 (2).png" class="side_menu_img">
+                                <label class="side_menu_name">오렌지주스</label>
+                                <label class="side_menu_price">2,000원</label>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="side_menu_btn">
+                                <img src="../../img/디저트/ㅎ사이드음료 (6).png" class="side_menu_img">
+                                <label class="side_menu_name">콜라/사이다</label>
+                                <label class="side_menu_price">1,500원</label>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div> <!-- side_menu end -->
+                
+                <div id="side_event_area">
+                    <div class="close" style="display: inline;"><input type="button" class="side_cancle" href="#" value="취 소"></div>
+                    <div class="close" style="display: inline;"><input type="button" id="side_ok" href="#" value="확 인"></div>
+                </div>
+
+            </div> <!-- content_pop_background end-->
+            </div>   <!-- content_pop_area end -->
+
+    </div> <!--overlay 모달 끝 -->
+
+    </div> <!-- modal end -->
+    </div> <!-- wrap kiosk end -->
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src="indexhide.js"></script>
+        <script src="pop.js"></script>
+</body>
+</html>
