@@ -21,9 +21,12 @@ $(document).ready(function() {
 
    $('.close').click(function() {
       // $('#overlay').fadeOut(300);
+      $('#wrap_kiosk').removeClass('modal-open');
       $('.overlay').fadeOut(300);
+      $('.container').removeClass('modal-open');
    });
 
+   
 
    // $('.close').click(function() {
    //    $('.overlay2').fadeOut(300);
