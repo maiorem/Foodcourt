@@ -36,7 +36,7 @@ window.onload = function () {
         // var randNum= document.getElementById("msg_waitingNum");
 		// 	randNum.innerHTML = '<p>대기번호 : '+Math.floor( mathRandom * 501 + 1 )+'</p>';
         var randNum= document.getElementById("msg_waitingNum");
-			randNum.innerText = '대기번호 : '+Math.floor( mathRandom * 501 + 1 );
+			randNum.innerText = '대기번호 : '+Math.floor( mathRandom * 1000 + 1 );
 
     }
     
