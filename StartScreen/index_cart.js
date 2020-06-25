@@ -12,17 +12,16 @@ function Cart(selectSort, selectMenu, sPrice) {
 
 function createShoping() {
 
-    var buttom = document.querySelector(".menu_btn");
-
-    var sort = "dessert";
-    var menu = $('.menu_btn').val();
-    var price =buttom.getAttribute("data-value");
-
+    var sort="dessert";
+    var menu=$('h3', this).html();
+    var price=$('p', this).html();
 
     shopingList.push(new Cart(sort, menu, price));
 
     cart_list();
     setLocal();
+
+    return false;
 
 }
 
@@ -41,22 +40,29 @@ function deleteCart(idx) {
 
 
 function cart_list() {
-    var delBtn = document.createElement("button");
-    delBtn.innerText="x";
-    delBtn.addEventListener("click", deleteCart);
 
     var list = '';
-    list+='<table id="cart_listb">';
+    list +='<table id="cart_list">';
+    list += '<tr>';
+    list += '<th>번호</th>';
+    list += '<th>분류</th>';
+    list += '<th>메뉴</th>';
+    list += '<th>수량</th>';
+    list += '<th>금액</th>';
+    list += '<th></th></tr>';
+    
+
     for (var idx = 0; idx < shopingList.length; idx++) {
         list += '<tr>     <td>' + idx + '</td>';
         list += '     <td>' + shopingList[idx].sort + '</td>';
         list += '     <td>' + shopingList[idx].menu + '</td>';
-        list += '     <td> <select><option>1</option><option>2</option><option>3</option><option>4</option></select></td>';
+        list += '     <td> <input type="number" value="1"></td>';
         list += '     <td>' + shopingList[idx].price + '</td>';
-        list += '     <td> <a href="javascript:deledteCart('+idx+')>삭제</a> </td></tr>';
+        list += '     <td> <a href="javascript:deleteCart('+idx+')>삭제</a> </td></tr>';
     }   
     list+='</table>';
-    $('#cart_listb').html(list);
+
+    $('#cart_list').html(list);
 }
 
 
@@ -85,7 +91,7 @@ $(document).ready(function () {
 
     initStore();
     cart_list();
-    $('.menu_btn').click(createShoping);
+    $('div.menu_cell').click(createShoping);
 
 });
 
