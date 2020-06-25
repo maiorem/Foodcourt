@@ -175,10 +175,11 @@
     width: 160px;
     height: 110px;
     margin: 0 auto;
-    margin-top: 10px;
+    /* 가람 수정 */
+    /* margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
     display: block;
     border-radius: 10px;
    

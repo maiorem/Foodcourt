@@ -20,6 +20,11 @@ button{
     width: 164px;
     height: 163px;
 }
+/* 가람 추가 */
+#side_menu_div button{
+    width: 200px;
+    height: 163px;
+}
 div.content>button.menu>img{
     width: 144px;
     height: 143px;
