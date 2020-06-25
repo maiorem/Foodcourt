@@ -144,14 +144,14 @@
                     <!-- <div class="content_background"> -->
                         <div class="menu_div" >
                             <div class="menu_cell">
-                                <button type="button" class="menu_btn tiramisu trigger" value="디저트_티라미수" data-value="5000">
+                                <button type="button" id="tiramisu" class="menu_btn tiramisu trigger" value="디저트_티라미수" data-value="5000">
                                     <img src="../img_박혜미테스트/티라미수 (1).png" class="menu_img" id="tiramisu">
                                     <h3 class="menu_name">티 라 미 수</h3>
                                     <p class="menu_price">5,000원</p>
                                 </button>
                             </div>
                             <div class="menu_cell">
-                                <button type="button" class="menu_btn bingsu trigger" value="디저트_팥빙수" data-value="6000">
+                                <button type="button" id="bingsu" class="menu_btn bingsu trigger" value="디저트_팥빙수" data-value="6000">
                                     <img src="../img_박혜미테스트/팥빙수.png" class="menu_img">
                                     <h3 class="menu_name">팥 빙 수</h3>
                                     <p class="menu_price">6,000원</p>
@@ -322,7 +322,7 @@
 
 
 
-        <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    사이드 메뉴화면   ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+        <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    (팝업) 사이드 메뉴화면   ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
 
 
         <!-- (팝업) 사이드메뉴화면 -->
@@ -400,9 +400,8 @@
 
 
 
-                </div> <!-- overlay end -->
-            </div> <!-- popup end -->
-        </div>X</div>  <!-- close end -->
+            </div> <!-- overlay end -->
+        </div> <!-- popup end -->
                   
              
             
@@ -410,6 +409,53 @@
 
 
 
+
+
+
+
+        <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■    (팝업) 주문결제 화면   ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
+
+
+        <!-- (팝업) 사이드메뉴화면 -->
+        <div id="overlay">
+            <div id="popup">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+                <div id="side_event_area">
+                    <div id="close" style="display: inline;"><input type="button" id="side_cancle" class="trigger" href="#" value="취 소"></div>
+                    <input type="button" id="side_ok" class="trigger" href="#" value="확 인">
+                </div>
+
+            </div> <!-- content_pop_background end-->
+         </div>   <!-- content_pop_area end -->
+    <!-- </div> -->    <!-- wrap end-->
+
+
+
+
+
+        </div> <!-- overlay end -->
+    </div> <!-- popup end -->
  
 
 
