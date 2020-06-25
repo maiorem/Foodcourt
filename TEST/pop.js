@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
    $('.trigger').click(function() {
+      $('#overlay').fadeIn(300);
       $('.overlay').fadeIn(300);
    });
 
@@ -12,7 +13,9 @@ $(document).ready(function() {
       $('.overlay3').fadeIn(300);
    });
 
+
    $('.close').click(function() {
+      $('#overlay').fadeOut(300);
       $('.overlay').fadeOut(300);
    });
 
@@ -134,8 +137,8 @@ $(document).ready(function() {
       sidemenuArr.push(sidemenu);
       
       menu.side=sidemenuArr;
-      alert(menu.sname);
-      alert(menu.side[1].side_name);
+      // alert(menu.sname);
+      // alert(menu.side[1].side_name);
 
 
       

@@ -16,15 +16,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
 
-    <link href="../TEST/side_menu.css" rel="stylesheet">
+    <!-- <link href="../TEST/side_menu.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="../TEST/indexhide.css">
-    <link rel="stylesheet" href="../TEST/menu.css">
+    <link rel="stylesheet" href="../TEST/menu2.css">
     <link rel="stylesheet" href="../TEST/메뉴선택div버전.css">
     <link rel="stylesheet" href="../TEST/orderlist.css">
     <link rel="stylesheet" href="../TEST/pop.css">
+    <link rel="stylesheet" href="../css_박혜미테스트/menu_side.css">
     <link rel="stylesheet" href="../TEST/cardPlusWaiting_card.css">
     <link rel="stylesheet" href="../TEST/cardPlusWaiting_wait.css">
-    <link rel="stylesheet" href="../css_박혜미테스트/menu_side.css">
+    <!-- <link rel="stylesheet" href="../css_박혜미테스트/menu_side.css"> -->
 
     
     
@@ -248,15 +249,40 @@
                                 <p class="menu_price">5,000원</p>
                             </button>
                         </div>
-                        <div id="card"><img src="../img/디저트/팥빙수.png"><br>팥빙수<div id="price">6,000</div>
+                        <div class="menu_cell">
+                            <button type="button" id="bingsu" class="menu_btn bingsu trigger" value="디저트_팥빙수" data-value="6000">
+                                <img src="../img_박혜미테스트/팥빙수.png" class="menu_img">
+                                <h3 class="menu_name">팥 빙 수</h3>
+                                <p class="menu_price">6,000원</p>
+                            </button>
                         </div>
-                        <div id="card"><img src="../img/디저트/요거트.png"><br>요거트<div id="price">4,000</div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn yogurt trigger" value="디저트_요거트" data-value="4000">
+                                <img src="../img_박혜미테스트/요거트.png" class="menu_img">
+                                <h3 class="menu_name">요 거 트</h3>
+                                <p class="menu_price">4,000원</p>
+                            </button>
                         </div>
-                        <div id="card"><img src="../img/디저트/프레즐.png"><br>프레즐<div id="price">3,000</div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn pretzels trigger" value="디저트_프레즐" data-value="3000">
+                                <img src="../img_박혜미테스트/프레즐.png" class="menu_img">
+                                <h3 class="menu_name">프 레 즐</h3>
+                                <p class="menu_price">3,000원</p>
+                            </button>
                         </div>
-                        <div id="card"><img src="../img/디저트/쿠키 (2).png"><br>쿠키<div id="price">2,000</div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn cookie trigger" value="디저트_쿠키" data-value="2000">
+                                <img src="../img_박혜미테스트/쿠키 (2).png" class="menu_img">
+                                <h3 class="menu_name">쿠 키</h3>
+                                <p class="menu_price">2,000원</p>
+                            </button>
                         </div>
-                        <div id="card"><img src="../img/디저트/아이스크림.png"><br>아이스크림<div id="price">1,500</div>
+                        <div class="menu_cell">
+                            <button type="button" class="menu_btn icecream trigger" value="디저트_아이스크림" data-value="1500">
+                                <img src="../img_박혜미테스트/아이스크림.png" class="menu_img">
+                                <h3 class="menu_name">아 이 스 크 림</h3>
+                                <p class="menu_price">5,000원</p>
+                            </button>
                         </div>
                         
                 </div>
@@ -497,8 +523,8 @@
                     </div> <!-- side_menu end -->
                     
                     <div id="side_event_area">
-                        <div id="close" style="display: inline;"><input type="button" id="side_cancle" class="trigger" href="#" value="취 소"></div>
-                        <input type="button" id="side_ok" class="trigger" href="#" value="확 인">
+                        <div class="close" style="display: inline;"><input type="button" id="side_cancle" class="trigger" href="#" value="취 소"></div>
+                        <input type="button" id="side_ok" class="trigger2" href="#" value="확 인">
                     </div>
     
                 </div> <!-- content_pop_background end-->
@@ -593,6 +619,10 @@
 </div>
 
 </div> <!-- wrap -->
+
+
+
+
 
 
 
