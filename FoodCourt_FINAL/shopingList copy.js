@@ -176,7 +176,7 @@ $(document).ready(function () {
 
     });
 
-    //윤원 - 주문목록 추가
+    //윤원 - 결제하기 클릭 시 주문목록
     $('.trigger2').click(function () {
         $('#order_content').html(showCart());
     });
