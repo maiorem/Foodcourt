@@ -178,9 +178,9 @@ $(document).ready(function () {
 
 
     //윤원 - 결제하기 클릭 시 주문목록
-    $('.trigger2').click(function () {
-        $('#order_content').html(showCart());
-    });
+    // $('.trigger2').click(function () {
+    //     $('#order_content').html(showCart());
+    // });
 
     //  (팝업-사이드창) 
     // 사이드메뉴 선택시 속성추가
