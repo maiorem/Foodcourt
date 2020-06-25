@@ -147,7 +147,8 @@
 }
 
 /* 영역 : 사이드메뉴 div */
-#side_menu_div {
+/* 가람 수정 클래스 */
+.side_menu_div {
     position: relative;
     margin: 0 auto;
 
@@ -159,7 +160,8 @@
 
 
 /* 영역 : 사이드메뉴 각 셀들 */
-#side_menu_div div {
+/* 가람 수정 클래스 */
+.side_menu_div div {
     float: left;
     padding-bottom: 10px;
 }
