@@ -39,12 +39,6 @@ window.onload = function () {
         }, 1000 * 5);
 
         var mathRandom = Math.random();
-    //   var waitingNum = Math.floor( mathRandom * 501 + 1 );
-    //     document.getElementById("msg_waitingNum").innerHTML('<p>대기번호 : '+waitingNum+'</p>');
-
-
-        // var randNum= document.getElementById("msg_waitingNum");
-		// 	randNum.innerHTML = '<p>대기번호 : '+Math.floor( mathRandom * 501 + 1 )+'</p>';
         var randNum= document.getElementById("msg_waitingNum");
             randNum.innerText = '대기번호 : '+Math.floor( mathRandom * 1000 + 1 );
             
