@@ -3,7 +3,7 @@ $(document).ready(function() {
        $('#overlay').fadeIn(300);
     });
  
-    $('.close').click(function() {
+    $('#close').click(function() {
        $('#overlay').fadeOut(300);
        $('.side_menu_btn').removeClass('select_border');
     });
@@ -17,7 +17,14 @@ $(document).ready(function() {
 
       $('#select_menu_img>img').attr('src', img);
 
+      var name = $(this).find('h3').text();
+      $('#menu_info>h2').text(name);
+
+      var price = $(this).find('p').text();
+      $('.select_menu_price').text(price);
+
    });
+
 
 
 
