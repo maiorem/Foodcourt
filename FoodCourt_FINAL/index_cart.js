@@ -3,20 +3,23 @@
 var shopingList = [];
 
 
-function Cart(selectSort, selectMenu, sPrice) {
-    this.sort = selectSort;
+function Cart(selectMenu, selectSideMenu, samount, sPrice) {
+
     this.menu = selectMenu;
+    this.side = selectSideMenu;
+    this.amount = samount;
     this.price = sPrice;
 }
 
 
 function createShoping() {
 
-    var sort="dessert";
-    var menu=$('h3', this).html();
-    var price=$('p', this).html();
+    var menu=$('#menu_info h2', this).html();
+    var side=$('.btn_side h3', this).html();
+    var amount=$('input[type=number]', this).html();
+    var price=parseInt($('#select_count p'), this) + parseInt($('.btn_side p', this).html());
 
-    shopingList.push(new Cart(sort, menu, price));
+    shopingList.push(new Cart(menu, side, amount, price));
 
     cart_list();
     setLocal();
@@ -45,8 +48,8 @@ function cart_list() {
     list +='<table id="cart_list">';
     list += '<tr>';
     list += '<th>번호</th>';
-    list += '<th>분류</th>';
     list += '<th>메뉴</th>';
+    list += '<th>사이드</th>';
     list += '<th>수량</th>';
     list += '<th>금액</th>';
     list += '<th></th></tr>';
@@ -54,11 +57,11 @@ function cart_list() {
 
     for (var idx = 0; idx < shopingList.length; idx++) {
         list += '<tr>     <td>' + idx + '</td>';
-        list += '     <td>' + shopingList[idx].sort + '</td>';
         list += '     <td>' + shopingList[idx].menu + '</td>';
-        list += '     <td> <input type="number" value="1"></td>';
+        list += '     <td>' + shopingList[idx].side + '</td>';
+        list += '     <td> '+ shopingList[idx].amount +'</td>';
         list += '     <td>' + shopingList[idx].price + '</td>';
-        list += '     <td> <a href="javascript:deleteCart('+idx+')>삭제</a> </td></tr>';
+        list += '     <td> <a href="javascript:deleteCart('+idx+')">삭제</a> </td></tr>';
     }   
     list+='</table>';
 
@@ -91,7 +94,7 @@ $(document).ready(function () {
 
     initStore();
     cart_list();
-    $('div.menu_cell').click(createShoping);
+    $('#content_pop_background').click(createShoping);
 
 });
 
