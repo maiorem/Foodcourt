@@ -7,6 +7,7 @@ var menu = {};
 function deleteCart(idx) {
     shopingList.splice(idx, 1);
     cart_list();
+    show_cartList();
     setLocal();
 }
 
@@ -122,8 +123,12 @@ function cart_list() {
     $('#cart_list').html(list);
 }
 
+
+
+
 //선택한 메뉴 주문목록에 나오는 메서드
 function show_cartList() {
+
     var cartList = '';
     cartList += '<table id="order_list">';
 
@@ -304,6 +309,7 @@ $(document).ready(function () {
 
         shopingList.push(menu);
         cart_list();
+        show_cartList();
         setLocal();
 
 
