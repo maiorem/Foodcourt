@@ -17,22 +17,6 @@ window.onload = function () {
   var btn_payment = document.getElementById('credit');
 
   
-
-  // When the user clicks on the button, open the modal 
-
-
-  setTimeout(function () {
-    // wrap01.style.display = "none";
-    // wrap02.style.display = "block";
-    // if(wrap01.style.display='none'){
-    // wrap02.style.display='block';
-  //  }
-  }, 1000*5);
-
-
-  // setTimeout(function () {
-    
-  // }, 1000*5);
   
   // setTimeout(function(){
   btn_payment.onclick = function(){
