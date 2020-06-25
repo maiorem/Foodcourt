@@ -154,6 +154,8 @@
   
   .modal-open .modal {
     top: 0;
+    display: block;
+    
   }
   
 
