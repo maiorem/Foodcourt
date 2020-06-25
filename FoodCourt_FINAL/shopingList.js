@@ -203,7 +203,7 @@ $(document).ready(function () {
     // 사이드메뉴 선택 후 ㅡ> 확인버튼 클릭시 ㅡ> 속성삭제
     $('#side_ok').click(function () {
         $('.side_menu_btn').removeClass('select_border');
-        $('#order_content').html(showCart());
+        // $('#order_content').html(showCart());
         getTotalAmount();
         getTotalPrice();
 
