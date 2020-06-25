@@ -13,7 +13,6 @@ $(document).ready(function() {
    $('.menu_btn').click(function(){
 
       var img = $(this).find('img').attr('src');
-      // alert(img);
 
       $('#select_menu_img>img').attr('src', img);
 
@@ -113,8 +112,6 @@ $(document).ready(function() {
       sidemenuArr.push(sidemenu);
       
       menu.side=sidemenuArr;
-      alert(menu.sname);
-      alert(menu.side[1].side_name);
 
 
       
