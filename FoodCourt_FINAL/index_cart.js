@@ -94,7 +94,7 @@ $(document).ready(function () {
 
     initStore();
     cart_list();
-    $('#content_pop_background').click(createShoping);
+    $('#side_ok').click(createShoping);
 
 });
 
