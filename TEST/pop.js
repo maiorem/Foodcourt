@@ -51,6 +51,11 @@ $(document).ready(function() {
       var price = $(this).find('p').text();
       $('.select_menu_price').text(price);
 
+      /* 가람: 사이드 메뉴 변경 로직 */
+      var type = $(this).attr('data-value');
+      $('.side_menu_div').attr('style', 'display: none');
+      $("."+type).attr('style', 'display: block');
+      $('#side_menu_div').html($(type).html())
    });
 
 
