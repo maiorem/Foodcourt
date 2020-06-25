@@ -12,6 +12,11 @@ function Cart(selectMenu, selectSideMenu, samount, sPrice) {
 }
 
 
+var menuName=function(){
+
+}
+
+
 function createShoping() {
 
     var menu=$('#menu_info h2', this).html();
@@ -94,7 +99,7 @@ $(document).ready(function () {
 
     initStore();
     cart_list();
-    $('#side_ok').click(createShoping);
+    $('#side_ok').submit(createShoping);
 
 });
 
