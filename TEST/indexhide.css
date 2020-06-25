@@ -66,30 +66,32 @@
   #hall_btn{  
     width:168px;
     height:188px;
-   padding-right: 120px;
+   /* padding-right: 120px; */
    
-    margin-right: 50px;
+    /* margin-right: 40px; */
   }
   #hall_img{
     width: 105px;
     height: 140px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     margin-bottom: 30px;
+    text-align: left;
   }
   
   #take_btn{
     width:168px;
     height:188px;
-    padding-right: 120px;
-    margin-left: 50px;
+    /* padding-right: 120px; */
+    /* margin-left: 50px; */
   }
   
   #take_img{
     width: 105px;
     height: 140px;
-    margin-right: 110px;
+    /* margin-right: 110px; */
     margin-bottom: 30px;
   }
+  
   .container > .btn {
     margin: 60px;
     padding: 20px 40px;
@@ -122,32 +124,37 @@
     font: 300 16px Lato;
   }
   
-  .btn {
+ 
+
+
+  #take_btn {
     background-color: white;
     padding: 10px 25px;
     display: inline-block;
     border: 15px solid dimgray;
     border-radius: 25px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-left: 50px;
 
     position: relative;
     transition: all .4s ease;
     cursor: pointer;
   }
 
-
-  .btn {
+  #hall_btn {
     background-color: white;
     padding: 10px 25px;
     display: inline-block;
     border: 15px solid dimgray;
     border-radius: 25px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    margin-right: 50px;
 
     position: relative;
     transition: all .4s ease;
     cursor: pointer;
   }
+
   .btn:hover {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
   }

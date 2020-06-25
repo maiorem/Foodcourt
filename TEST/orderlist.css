@@ -123,13 +123,28 @@ ul>li:nth-child(2){
     font-size: 20px;
     color: white;
 }
-button.togo, button.cancel{
+button.cancel{
     background-color: dimgray;
     border: 1px solid dimgray;
 }
-button.hall, button.credit{
+
+button.togo{
+    
+    background-color: dimgray;
+    border: 1px solid dimgray;
+}
+
+ button.credit{
     border: 1px solid orange;
     background-color: orange;
 
     float: right;
+}
+
+button.hall{
+    border: 1px solid orange;
+    background-color: orange;
+
+    float: right;
+
 }

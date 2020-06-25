@@ -158,6 +158,93 @@ $(document).ready(function() {
       return menu;
    });
 
+      //  테이크아웃 id #take_btn
+ 
+   // $('#hall_btn').click(function(){
+   //    alert('test')
+   //    $('.togo').css('background-color',red);
+   // });
+
+   $('button.togo').click(function(){
+      
+      $(this).css({
+         'background-color': 'orange',
+         'border' : '1px solid orange'
+      });
+
+      $('button.hall').css({
+         'background-color': 'dimgray',
+         'border' : '1px solid dimgray'
+      
+      });
+
+   });
+
+   $('button.hall').click(function(){
+      
+      $(this).css({
+         'background-color': 'orange',
+         'border' : '1px solid orange'
+      });
+
+      $('button.togo').css({
+         'background-color': 'dimgray',
+         'border' : '1px solid dimgray'
+      
+      });
+
+   });
+
+
+
+   $('#hall_btn').click(function(){
+
+      $('#hall_btn').css({
+         'border' : '15px solid orange'
+      });
+
+      $('button.hall').css({
+         'background-color': 'orange',
+         'border' : '1px solid orange'
+      });
+
+      $('button.togo').css({
+         'background-color': 'dimgray',
+         'border' : '1px solid dimgray'
+      
+      });
+   });
+
+   $('#take_btn').click(function(){
+
+      $('#take_btn').css({
+         'border' : '15px solid orange'
+      });
+
+      $('button.togo').css({
+         'background-color': 'orange',
+         'border' : '1px solid orange'
+      });
+      
+      $('button.hall').css({
+         'background-color': 'dimgray',
+         'border' : '1px solid dimgray'
+      
+      });
+   });
+
+
+   $('#bfbtn').click(function(){
+
+      $('#take_btn').css({
+         'border' : '15px solid dimgray'
+      });
+      $('#hall_btn').css({
+         'border' : '15px solid dimgray'
+      });
+
+   });
+
 
 
 
