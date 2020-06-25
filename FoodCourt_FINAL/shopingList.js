@@ -32,6 +32,30 @@ function deleteCart(idx) {
 // }
 
 
+//장바구니 내 모든 수량 리턴
+function getTotalAmount() {
+
+    var totalAmount = 0
+
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        totalAmount = totalAmount+parseInt(shopingList[idx].samount);
+    }
+
+    $('#getAmount').html('주문 수량 : '+totalAmount);
+}
+
+
+
+//장바구니 내 모든 가격 리턴
+function getTotalPrice() {
+    var tPrice = 0
+
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        tPrice = tPrice+((shopingList[idx].samount*shopingList[idx].sprice)+shopingList[idx].side_price);
+    }
+    
+    $('#getPrice').html('주문 금액 : '+tPrice);
+}
 
 
 
@@ -100,22 +124,8 @@ $(document).ready(function () {
     cart_list();
     setLocal();
 
-    //장바구니 내 모든 수량 리턴
-    var totalAmount = 0
-    for (var idx = 0; idx < shopingList.length; idx++) {
-        totalAmount = totalAmount+parseInt(shopingList[idx].samount);
-    }
-    $('#getAmount').html('주문 수량 : '+totalAmount);
-
-
-
-
-//장바구니 내 모든 가격 리턴
-    var tPrice = 0
-    for (var idx = 0; idx < shopingList.length; idx++) {
-        tPrice = tPrice+((shopingList[idx].samount*shopingList[idx].sprice)+shopingList[idx].side_price);
-    }
-    $('#getPrice').html('주문 금액 : '+tPrice);
+    getTotalAmount();
+    getTotalPrice();
 
 
     $('.trigger').click(function () {
