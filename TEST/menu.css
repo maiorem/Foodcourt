@@ -46,3 +46,9 @@
             float: left;
             margin-left: 80px;
         }
+
+
+        #side_menu_div button{
+            width: 200px;
+            height: 163px;
+        }

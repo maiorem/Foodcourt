@@ -13,32 +13,17 @@ $('.js-click-modal_korea').click(function(){
 
 
 
-$(document).ready(function(){
 
-  $('#koreafood').click(function(){
-    alert('asf');
-  // if($('#menuTable_jap').css('display')=="inline"){
-  //   $(this).hide();
-  // }
-  });
-  
-  
-  
-  
-  
-  
-  
-    $('#btn1').click(function(){
-      var offset = $('#menuTable_jap').offset();
-          $('html').animate({scrollTop : offset.top}, 0);
-         
-          if($('#menuTable_jap').css('display') == 'none'){
-            $('#menuTable_jap').show();
-        }else{
-            $('#menuTable_jap').hide();
-        }
-  
+//   $(document).ready(function(){
+    $('.menuOpt > a').on('click', function(){
+    
+        var GetaName = $(this).attr('href').split('#');
+        $('html,body').animate({scrollTop : $('a[name ='+GetaName[1]+']').offset().top},10000);
+       
     });
+// });
+
+
+
   
-  });
   

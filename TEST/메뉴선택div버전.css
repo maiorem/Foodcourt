@@ -65,7 +65,8 @@ div.menuOpt {
     
 }
 
-div.menuOpt>img {
+
+div.menuOpt>a>img {
     width:80px;
     height:55px;
 
@@ -81,7 +82,8 @@ div.menuOpt>img {
     background-color: rosybrown;
 } */
 
-#menuTable_kor {
+
+.menuTable {
     margin-top: 0px;
     float: right;
     border: 10px solid #696969;
@@ -93,16 +95,9 @@ div.menuOpt>img {
 
 }
 
-#menuTable_jap {
-    margin-top: 0px;
-    float: right;
-    border: 10px solid #696969;
-    border-top-left-radius: 15px;
-    /* border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px; */
-    overflow: auto;
-    background-color: white;
-
+#card{
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 
 div.menuSelect {
