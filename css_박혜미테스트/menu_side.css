@@ -171,6 +171,7 @@
     color: red;
     font-size: 1.2em;
     font-weight: bold;
+    
 }
 
 /* 이미지 : 사이드메뉴 */
@@ -193,7 +194,7 @@
     color: dimgrey;
     margin-right: 20px;
     padding-bottom: 10px;
-
+    display: inline;
     
 }
 
@@ -203,6 +204,7 @@
     font-weight: 500;
     color: red;
     margin-bottom: 10px;
+    display: inline;
 }
 
 /* 버튼 : 사이드메뉴 선택 */
@@ -213,6 +215,12 @@
     border: none;
     background-color: whitesmoke;
     
+}
+
+
+.select_border {
+    background-color: bisque;
+    border-radius: 10px;
 }
 
 
