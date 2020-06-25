@@ -35,14 +35,36 @@ $(document).ready(function() {
    });
 
 
+   // 작업중....
+   // 메뉴선택시, 사이드창에 선택메뉴의 이미지로 변경
+   // $('.tiramisu').click(function() {
+   //    $('#select_menu_img>img').attr('src','../img_박혜미테스트/티라미수 (1).png')
+   //    $('#tiramisu');
+   // });
 
-   $('.tiramisu').click(function() {
-      $('#select_menu_img+img')=$('#tiramisu');
+
+   // $('.menu_btn').click(function(){
+   //    var id_check = $(this).attr("id");
+   //    var img = $(this).find("img");
+   //    $(id_check).click(function() {
+   //       $('#select_menu_img>img').attr('src','id_check>img.src');
+   //    });
+
+
+   $('.menu_btn').click(function(){
+
+      var img = $(this).find('img').attr(src);
+
+      $('#select_menu_img>img').attr('src', img)
+
    });
 
 
-
  });
+
+
+ 
+ 
 
 
 
