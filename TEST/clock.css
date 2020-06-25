@@ -1,0 +1,8 @@
+
+.js-clock {
+    float: right;
+}
+
+.js-clock>h1 {
+    font-weight: bold;
+}
