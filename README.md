@@ -24,3 +24,8 @@
 [PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
 
 <hr />
+
+
+
+### 시연 영상
+<iframe width="640" height="360" src="https://youtu.be/pm3LveYlIrY" frameborder="0" gesture="media" allowfullscreen=""></iframe>
