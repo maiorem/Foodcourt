@@ -116,13 +116,10 @@ function setLocal() {
 
 
 
-
-
 $(document).ready(function () {
 
     initStore();
     setLocal();
-
 
 
     $('.trigger').click(function () {
