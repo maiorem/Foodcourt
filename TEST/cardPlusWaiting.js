@@ -11,9 +11,23 @@ window.onload = function () {
   var overlay2 = document.getElementById('overlay2');
   var first = document.getElementById('first');
   var btn_payment = document.getElementById('credit');
+  var btn_cancel = document.getElementById('cancel');
+  var btn_pay = document.getElementById('payment');
+
   
+  btn_pay.onclick = function(){
+    orderPop.style.display = "block";
+
+  }
+
+
+  btn_cancel.onclick = function(){
+    orderPop.style.display = "none";
+    overlay2.style.display = "none";
+
+  }
+
   
-  // setTimeout(function(){
   btn_payment.onclick = function(){
     wrap01.style.display = "block";
     orderPop.style.display = "none";
@@ -45,5 +59,7 @@ window.onload = function () {
 
 
   }
+
+ 
 
 }
