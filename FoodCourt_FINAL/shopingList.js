@@ -12,24 +12,24 @@ function deleteCart(idx) {
 
 
 // 해당 인덱스 사이드메뉴 리스트 이름들 리턴
-function sideListName(idx) {
-    for (var i = 0; i < shopingList[idx].side.length; i++) {
-        var sideListN = shopingList[idx].side[i].side_name;
-    }
+// function sideListName(idx) {
+//     for (var i = 0; i < shopingList[idx].side.length; i++) {
+//         var sideListN = shopingList[idx].side[i].side_name;
+//     }
 
-    return sideListN;
+//     return sideListN;
 
-}
+// }
 
-// 해당 인덱스 사이드메뉴 총 가격 리턴
-function sideListPrice(idx) {
-    var sideListP=0;
-    for (var i = 0; i < shopingList[idx].side.length; i++) {
-        sideListP = sideListP+shopingList[idx].side[i].side_price;
-    }
+// // 해당 인덱스 사이드메뉴 총 가격 리턴
+// function sideListPrice(idx) {
+//     var sideListP=0;
+//     for (var i = 0; i < shopingList[idx].side.length; i++) {
+//         sideListP = sideListP+shopingList[idx].side[i].side_price;
+//     }
 
-    return sideListP;
-}
+//     return sideListP;
+// }
 
 
 //장바구니 내 모든 수량 리턴
@@ -41,7 +41,7 @@ function getTotalAmount() {
         totalAmount += shopingList[idx].samount;
     }
 
-    $('#getAmount').html('주문 수량 : '+totalAmount);
+    $('<span id="getAmount"></span>').html('주문 수량 : '+totalAmount).appendTo('#total');
 }
 
 
@@ -51,12 +51,10 @@ function getTotalPrice() {
     var tPrice = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
-        tPrice = tPrice+shopingList[idx].samount*s(shopingList[idx].sprice+shopingList[idx].side_price);
+        tPrice = tPrice+((shopingList[idx].samount*shopingList[idx].sprice)+shopingList[idx].side_price);
     }
-
-    var totalPrice=totalPrice+tPrice;
-
-    $('#getPrice').html('주문 금액 : '+totalPrice);
+    
+    $('<span id="getPrice"></span>').html('주문 금액 : '+tPrice).appendTo('#total');;
 }
 
 
@@ -81,7 +79,7 @@ function cart_list() {
         list += '     <td>' + shopingList[idx].side_name + '</td>';
 
         list += '     <td> ' + shopingList[idx].samount + '</td>';
-        list += '     <td>' + (shopingList[idx].sprice+shopingList[idx].side_price) + '</td>';
+        list += '     <td>' + ((shopingList[idx].samount*shopingList[idx].sprice)+shopingList[idx].side_price) + '</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
     }
 
