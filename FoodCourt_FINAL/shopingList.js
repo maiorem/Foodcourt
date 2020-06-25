@@ -38,10 +38,10 @@ function getTotalAmount() {
     var totalAmount = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
-        totalAmount = totalAmount+parseInt(shopingList[idx].samount);
+        totalAmount = totalAmount + parseInt(shopingList[idx].samount);
     }
 
-    $('#getAmount').html('주문 수량 : '+totalAmount);
+    $('#getAmount').html('주문 수량 : ' + totalAmount);
 }
 
 
@@ -51,10 +51,10 @@ function getTotalPrice() {
     var tPrice = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
-        tPrice = tPrice+((shopingList[idx].samount*shopingList[idx].sprice)+shopingList[idx].side_price);
+        tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
-    
-    $('#getPrice').html('주문 금액 : '+tPrice);
+
+    $('#getPrice').html('주문 금액 : ' + tPrice);
 }
 
 
@@ -79,7 +79,7 @@ function cart_list() {
         list += '     <td>' + shopingList[idx].side_name + '</td>';
 
         list += '     <td> ' + shopingList[idx].samount + '</td>';
-        list += '     <td>' + ((shopingList[idx].samount*shopingList[idx].sprice)+shopingList[idx].side_price) + '</td>';
+        list += '     <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
     }
 
@@ -88,6 +88,29 @@ function cart_list() {
     $('#cart_list').html(list);
 }
 
+//선택한 메뉴 주문목록에 나오는 메서드
+var showCart = function show_cartList() {
+    var cartList = '';
+    cartList += '<table>';
+
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        cartList += '   <tr>';
+        cartList += '       <td>' + idx + '</td>';
+        cartList += '       <td>' + shopingList[idx].sname + '</td>';
+        cartList += '       <td>' + sideListName(idx) + '</td>';
+        cartList += '       <td>' + shopingList[idx].samount + '</td>';
+        cartList += '       <td>' + shopingList[idx].sprice + '</td>';
+        cartList += '';
+        cartList += '   </tr>';
+
+    }
+
+    cartList += '</table>';
+
+    return cartList;
+    // $('#order_content').html(cartList);
+
+}
 
 
 
@@ -174,12 +197,18 @@ $(document).ready(function () {
 
     });
 
+    //윤원 - 결제하기 클릭 시 주문목록
+    $('.trigger2').click(function () {
+        $('#order_content').html(showCart());
+    });
 
 
+    //윤원 - 주문목록 추가
     //  (팝업-사이드창) 
     // 사이드메뉴 선택 후 ㅡ> 확인버튼 클릭시 ㅡ> 속성삭제
     $('#side_ok').click(function () {
         $('.side_menu_btn').removeClass('select_border');
+        $('#order_content').html(showCart());
     });
 
 
@@ -203,7 +232,7 @@ $(document).ready(function () {
 
 
     var sidemenu = {};
-   // var sidemenuArr = [];
+    // var sidemenuArr = [];
 
     // 사이드메뉴 선택. (여러개 선택시?)
     $('.side_menu_btn').click(function () {

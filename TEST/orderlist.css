@@ -73,8 +73,12 @@ ul>li{
     /* padding-left: 20px;
     padding-right: 20px; */
 }
-ul>li:nth-child(3){
+/* ul>li:nth-child(3){
     width: 180px;
+    text-align: left;
+} */
+ul>li:nth-child(2){
+    width: 120px;
     text-align: left;
 }
 .order_content{
@@ -93,8 +97,12 @@ ul>li:nth-child(3){
     padding: 10px;
     text-align: center;
 }
-.order_content td:nth-child(3){
+/* .order_content td:nth-child(3){
     width: 200px;
+    text-align: left;
+} */
+.order_content td:nth-child(2){
+    width: 150px;
     text-align: left;
 }
 .order_footer{
