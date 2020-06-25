@@ -273,7 +273,7 @@
 /*-------------- 팝업창 스크립트 -------------- */
  
 
-#overlay {
+/* #overlay {
    position: fixed;
    height: 100%; 
    width: 100%;
@@ -283,7 +283,7 @@
    left: 0;
    background: rgba(0,0,0,0.8);
    display: none;
-}
+} */
 
 /* #popup {
    max-width: 600px;
@@ -296,12 +296,12 @@
    margin: 20px auto;
 } */
 
-#close {
+/* #close {
    position: relative;
    /* top: 10px;
    right: 10px; */
    cursor: pointer;
    color: #000;
    display: inline;
-}
+} */
 
