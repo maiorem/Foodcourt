@@ -93,10 +93,10 @@ function cart_list() {
 
 function initStore() {
 
-    var data = localStorage.getItem('foodcart');
+    var data = sessionStorage.getItem('foodcart');
     if (data == null) {
         var jdata = JSON.stringify(shopingList);
-        localStorage.setItem('foodcart', jdata);
+        sessionStorage.setItem('foodcart', jdata);
     } else {
         shopingList = JSON.parse(data);
     }
@@ -108,8 +108,10 @@ function initStore() {
 //로컬저장소에 저장
 function setLocal() {
     var jsondata = JSON.stringify(shopingList);
-    localStorage.setItem('foodcart', jsondata);
+    sessionStorage.setItem('foodcart', jsondata);
 }
+
+
 
 
 
@@ -120,6 +122,7 @@ $(document).ready(function () {
 
     initStore();
     setLocal();
+
 
 
     $('.trigger').click(function () {
@@ -237,13 +240,11 @@ $(document).ready(function () {
 
 
 
-
-
     var order = $('#side_ok').click(function () {
         return menu;
     });
 
-
+    console.log(order);
 
 
 });
