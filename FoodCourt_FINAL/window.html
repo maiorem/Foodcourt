@@ -17,8 +17,8 @@
 
 
     <!-- <link href="../TEST/side_menu.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../TEST/indexhide.css">
-    <link rel="stylesheet" href="../TEST/menu2.css">
+    <link rel="stylesheet" href="../TEST/indexhide.css"> <!--초기 화면, 메뉴선택화면의 장바구니 파트-->
+    <link rel="stylesheet" href="../TEST/menu2.css"> <!--메뉴버튼-->
     <link rel="stylesheet" href="../TEST/메뉴선택div버전.css">
     <link rel="stylesheet" href="../TEST/orderlist.css">
     <link rel="stylesheet" href="../TEST/pop.css">
@@ -29,6 +29,9 @@
 
     <!-- shopping list 추가 -->
     <script src="../FoodCourt_FINAL/shopingList.js"></script>
+
+    <!-- order_list.css 추가 -->
+    <link rel="stylesheet" href="../FoodCourt_FINAL/order_list.css">
     
     
     
@@ -470,6 +473,10 @@
                         <th></th>
                     </tr>
                 </table>
+                <div id="total">
+                    <span id="getAmount">주문 수량 : </span>
+                    <span id="getPrice">주문 금액 : </span>
+                </div>
             </div>
             <div id="event_area">
                 <input type="button" id="return_startscreen" href="#" value="처음으로">
@@ -530,7 +537,7 @@
                     </ul>
                 </div>
                 <div class="order_content" style="overflow: auto;">
-                    <table>
+                    <table id="order_list">
                         <tr>
                             <td>content 1</td>
                             <td>content 1</td>

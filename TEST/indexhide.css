@@ -18,13 +18,13 @@
     height: 190px;
     float: left;
     position: relative;
-  
+    margin-top: 10px;
     
   }
   
   #cart_list {
     width: 800px;
-    height: 190px;
+    height: 150px;
     overflow: scroll;
     position:absolute;
     font-size: 0.8em;

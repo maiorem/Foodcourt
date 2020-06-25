@@ -33,31 +33,31 @@ function sideListPrice(idx) {
 
 
 //장바구니 내 모든 수량 리턴
-// function getTotalAmount() {
+function getTotalAmount() {
 
-//     var totalAmount = 0
+    var totalAmount = 0
 
-//     for (var idx = 0; idx < shopingList.length; idx++) {
-//         totalAmount += shopingList[idx].samount;
-//     }
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        totalAmount += shopingList[idx].samount;
+    }
 
-//     $('#getAmount').html('주문 수량 : '+totalAmount);
-// }
+    $('#getAmount').html('주문 수량 : '+totalAmount);
+}
 
 
 
-// //장바구니 내 모든 가격 리턴
-// function getTotalPrice() {
-//     var tPrice = 0
+//장바구니 내 모든 가격 리턴
+function getTotalPrice() {
+    var tPrice = 0
 
-//     for (var idx = 0; idx < shopingList.length; idx++) {
-//         tPrice += shopingList[idx].samount*shopingList[idx].sprice;
-//     }
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        tPrice = tPrice+shopingList[idx].samount*s(shopingList[idx].sprice+shopingList[idx].side_price);
+    }
 
-//     var totalPrice=totalPrice+tPrice;
+    var totalPrice=totalPrice+tPrice;
 
-//     $('#getPrice').html('주문 금액 : '+totalPrice);
-// }
+    $('#getPrice').html('주문 금액 : '+totalPrice);
+}
 
 
 
@@ -78,16 +78,18 @@ function cart_list() {
         list += '<tr>     <td>' + idx + '</td>';
         list += '     <td>' + shopingList[idx].sname + '</td>';
 
-        list += '     <td>' + sideListName(idx) + '</td>';
+        list += '     <td>' + shopingList[idx].side_name + '</td>';
 
         list += '     <td> ' + shopingList[idx].samount + '</td>';
-        list += '     <td>' + shopingList[idx].sprice + '</td>';
+        list += '     <td>' + (shopingList[idx].sprice+shopingList[idx].side_price) + '</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
     }
+
     list += '</table>';
 
     $('#cart_list').html(list);
 }
+
 
 
 
@@ -200,7 +202,7 @@ $(document).ready(function () {
 
 
     var sidemenu = {};
-    var sidemenuArr = [];
+   // var sidemenuArr = [];
 
     // 사이드메뉴 선택. (여러개 선택시?)
     $('.side_menu_btn').click(function () {
@@ -221,15 +223,16 @@ $(document).ready(function () {
             sideprice = 0;
         }
 
-        sidemenu = {
-            side_name: sidename,
-            side_price: sideprice
-        }
+        // sidemenu = {
+        //     side_name: sidename,
+        //     side_price: sideprice
+        // }
 
-        sidemenuArr.push(sidemenu);
+        // sidemenuArr.push(sidemenu);
 
         menu.samount = amount;
-        menu.side = sidemenuArr;
+        menu.side_name = sidename;
+        menu.side_price = sideprice;
 
         shopingList.push(menu);
         cart_list();
@@ -243,8 +246,6 @@ $(document).ready(function () {
     var order = $('#side_ok').click(function () {
         return menu;
     });
-
-    console.log(order);
 
 
 });
