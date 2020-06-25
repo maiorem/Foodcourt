@@ -11,28 +11,28 @@ function deleteCart(idx) {
 }
 
 
-// 해당 인덱스 사이드메뉴 리스트 이름들 리턴
-function sideListName(idx) {
-    for (var i = 0; i < shopingList[idx].side.length; i++) {
-        var sideListN = shopingList[idx].side[i].side_name;
-    }
+// // 해당 인덱스 사이드메뉴 리스트 이름들 리턴
+// function sideListName(idx) {
+//     for (var i = 0; i < shopingList[idx].side.length; i++) {
+//         var sideListN = shopingList[idx].side[i].side_name;
+//     }
 
-    return sideListN;
+//     return sideListN;
 
-}
+// }
 
-// // 해당 인덱스 사이드메뉴 총 가격 리턴
-function sideListPrice(idx) {
-    var sideListP=0;
-    for (var i = 0; i < shopingList[idx].side.length; i++) {
-        sideListP = sideListP+shopingList[idx].side[i].side_price;
-    }
+// // // 해당 인덱스 사이드메뉴 총 가격 리턴
+// function sideListPrice(idx) {
+//     var sideListP=0;
+//     for (var i = 0; i < shopingList[idx].side.length; i++) {
+//         sideListP = sideListP+shopingList[idx].side[i].side_price;
+//     }
 
-    return sideListP;
-}
+//     return sideListP;
+// }
 
 
-//장바구니 내 모든 수량 리턴
+//장바구니 내 모든 수량 리턴 => 장바구니로
 function getTotalAmount() {
 
     var totalAmount = 0
@@ -46,7 +46,7 @@ function getTotalAmount() {
 
 
 
-//장바구니 내 모든 가격 리턴
+//장바구니 내 모든 가격 리턴 => 장바구니로
 function getTotalPrice() {
     var tPrice = 0
 
@@ -56,6 +56,40 @@ function getTotalPrice() {
 
     $('#getPrice').html('주문 금액 : ' + tPrice);
 }
+
+
+//장바구니 내 모든 수량 리턴 => 결제창으로
+function getTotalAmountOrder() {
+
+    var totalAmount = 0
+
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        totalAmount = totalAmount + parseInt(shopingList[idx].samount);
+    }
+
+    $('#getAmountOrder').html('주문 수량 : ' + totalAmount);
+}
+
+
+
+//장바구니 내 모든 가격 리턴 => 결제창으로
+function getTotalPriceOrder() {
+    var tPrice = 0
+
+    for (var idx = 0; idx < shopingList.length; idx++) {
+        tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
+    }
+
+    $('#getPriceOrder').html('주문 금액 : ' + tPrice);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -89,26 +123,24 @@ function cart_list() {
 }
 
 //선택한 메뉴 주문목록에 나오는 메서드
-var showCart = function show_cartList() {
+function show_cartList() {
     var cartList = '';
-    cartList += '<table>';
+    cartList += '<table id="order_list">';
 
-    for (var idx = 0; idx < shopingList.length; idx++) {
+    for (var idx = 0; idx <shopingList.length; idx++) {
         cartList += '   <tr>';
         cartList += '       <td>' + idx + '</td>';
         cartList += '       <td>' + shopingList[idx].sname + '</td>';
-        cartList += '       <td>' + sideListName(idx) + '</td>';
+        cartList += '       <td>' + shopingList[idx].side_name + '</td>';
         cartList += '       <td>' + shopingList[idx].samount + '</td>';
-        cartList += '       <td>' + shopingList[idx].sprice + '</td>';
+        cartList += '       <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
         cartList += '';
         cartList += '   </tr>';
 
     }
+    cartList+='</table>';
 
-    cartList += '</table>';
-
-    return cartList;
-    // $('#order_content').html(cartList);
+    $('#order_list').html(cartList);
 
 }
 
@@ -145,9 +177,9 @@ $(document).ready(function () {
 
     initStore();
     cart_list();
+    show_cartList();
     setLocal();
-
-
+    
 
     $('.trigger').click(function () {
         $('#overlay').fadeIn(300);
@@ -203,7 +235,6 @@ $(document).ready(function () {
     // 사이드메뉴 선택 후 ㅡ> 확인버튼 클릭시 ㅡ> 속성삭제
     $('#side_ok').click(function () {
         $('.side_menu_btn').removeClass('select_border');
-        // $('#order_content').html(showCart());
         getTotalAmount();
         getTotalPrice();
 
@@ -228,6 +259,14 @@ $(document).ready(function () {
 
     });
 
+
+    $('#payment').click(function(){
+        getTotalAmountOrder();
+        getTotalPriceOrder();
+    });
+
+
+    
 
 
     var sidemenu = {};
@@ -278,7 +317,6 @@ $(document).ready(function () {
 
 
 });
-
 
 
 
