@@ -12,24 +12,24 @@ function deleteCart(idx) {
 
 
 // 해당 인덱스 사이드메뉴 리스트 이름들 리턴
-// function sideListName(idx) {
-//     for (var i = 0; i < shopingList[idx].side.length; i++) {
-//         var sideListN = shopingList[idx].side[i].side_name;
-//     }
+function sideListName(idx) {
+    for (var i = 0; i < shopingList[idx].side.length; i++) {
+        var sideListN = shopingList[idx].side[i].side_name;
+    }
 
-//     return sideListN;
+    return sideListN;
 
-// }
+}
 
 // // 해당 인덱스 사이드메뉴 총 가격 리턴
-// function sideListPrice(idx) {
-//     var sideListP=0;
-//     for (var i = 0; i < shopingList[idx].side.length; i++) {
-//         sideListP = sideListP+shopingList[idx].side[i].side_price;
-//     }
+function sideListPrice(idx) {
+    var sideListP=0;
+    for (var i = 0; i < shopingList[idx].side.length; i++) {
+        sideListP = sideListP+shopingList[idx].side[i].side_price;
+    }
 
-//     return sideListP;
-// }
+    return sideListP;
+}
 
 
 //장바구니 내 모든 수량 리턴
@@ -147,8 +147,6 @@ $(document).ready(function () {
     cart_list();
     setLocal();
 
-    getTotalAmount();
-    getTotalPrice();
 
 
     $('.trigger').click(function () {
@@ -179,9 +177,10 @@ $(document).ready(function () {
     });
 
 
-
-
-
+    //윤원 - 결제하기 클릭 시 주문목록
+    $('.trigger2').click(function () {
+        $('#order_content').html(showCart());
+    });
 
     //  (팝업-사이드창) 
     // 사이드메뉴 선택시 속성추가
@@ -197,10 +196,6 @@ $(document).ready(function () {
 
     });
 
-    //윤원 - 결제하기 클릭 시 주문목록
-    $('.trigger2').click(function () {
-        $('#order_content').html(showCart());
-    });
 
 
     //윤원 - 주문목록 추가
@@ -209,6 +204,10 @@ $(document).ready(function () {
     $('#side_ok').click(function () {
         $('.side_menu_btn').removeClass('select_border');
         $('#order_content').html(showCart());
+        getTotalAmount();
+        getTotalPrice();
+
+
     });
 
 
