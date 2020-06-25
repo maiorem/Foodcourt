@@ -28,4 +28,4 @@
 
 
 ### 시연 영상
-[![Video Label](https://img.youtu.be/pm3LveYlIrY/0.jpg)](https://youtu.be/pm3LveYlIrY)
+[![Video Label](https://img.youtu.be/pm3LveYlIrY.jpg)](https://youtu.be/pm3LveYlIrY)
