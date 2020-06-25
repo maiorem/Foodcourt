@@ -28,4 +28,4 @@
 
 
 ### 시연 영상
-<iframe width="640" height="360" src="https://youtu.be/pm3LveYlIrY" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+[![Video Label](https://img.youtu.be/pm3LveYlIrY/0.jpg)](https://youtu.be/pm3LveYlIrY)
