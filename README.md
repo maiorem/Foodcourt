@@ -26,6 +26,3 @@
 <hr />
 
 
-
-### 시연 영상
-<iframe width="973" height="753" src="https://www.youtube.com/embed/pm3LveYlIrY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
