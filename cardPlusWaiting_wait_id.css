@@ -62,7 +62,7 @@ div.msg_waitingNum {
 
 }
 
-#extraMessage {
+#msg_extra {
     text-align: center;
     line-height: 20px;
 }
@@ -74,7 +74,7 @@ div.msg_waitingNum {
     
 } */
 
-#bill_img>img{
+#img_bill>img{
     /* position: relative; */
     margin: 50px auto;
     width: 100px;
