@@ -22,20 +22,21 @@ window.onload = function () {
 
 
   setTimeout(function () {
-    wrap01.style.display = "none";
-    
+    // wrap01.style.display = "none";
+    // wrap02.style.display = "block";
     // if(wrap01.style.display='none'){
     // wrap02.style.display='block';
   //  }
-  }, 1000*20);
+  }, 1000*5);
 
 
-  setTimeout(function () {
-    wrap02.style.display = "block";
-  }, 6000);
+  // setTimeout(function () {
+    
+  // }, 1000*5);
   
   // setTimeout(function(){
   btn_payment.onclick = function(){
+    wrap01.style.display = "block";
     // wrap03.style.display = "none";
     // wrap02.style.display="none";
     orderPop.style.display = "none";
@@ -44,17 +45,25 @@ window.onload = function () {
     overlay2.style.display = "none";
 
     setTimeout(function () {
-      wrap03.style.display = "none";
-      wrap02.style.display="none";
+      wrap01.style.display = "none";
+      wrap02.style.display = "block";
+      
       // orderPop.style.display = "none";
       // wrap_kiosk.style.display= "none";
       // modalWrap.style.display= "none";
       // overlay2.style.display = "none";
+      
+      // $('.container').removeClass('modal-open');
+      
+    }, 1000*5);
+    
+    setTimeout(function(){
+      wrap02.style.display="none";
+      wrap03.style.display = "none";
       //첫화면
       first.style.display="block";
-      // first.setAttribute('class','container');
-      // $('.container').removeClass('modal-open');
-  
+      first.setAttribute('class','container');
+      
     }, 1000*10);
 
 
