@@ -1,12 +1,13 @@
 $(document).ready(function() {
 
    $('.trigger').click(function() {
-      $('#overlay').fadeIn(300);
       $('.overlay').fadeIn(300);
    });
 
+
    $('.trigger2').click(function() {
       $('.overlay2').fadeIn(300);
+      $('#overlay2').fadeIn(300);
    });
 
    $('.trigger3').click(function() {
@@ -19,14 +20,14 @@ $(document).ready(function() {
 
 
    $('.close').click(function() {
-      $('#overlay').fadeOut(300);
+      // $('#overlay').fadeOut(300);
       $('.overlay').fadeOut(300);
    });
 
 
-   $('.close').click(function() {
-      $('.overlay2').fadeOut(300);
-   });
+   // $('.close').click(function() {
+   //    $('.overlay2').fadeOut(300);
+   // });
 
 
    
@@ -165,6 +166,7 @@ $(document).ready(function() {
    //    $('.togo').css('background-color',red);
    // });
 
+
    $('button.togo').click(function(){
       
       $(this).css({
@@ -246,6 +248,15 @@ $(document).ready(function() {
    });
 
 
+   $('.menu').click(function(){
+      $('#take_btn').css({
+         'border' : '15px solid dimgray'
+      });
+      $('#hall_btn').css({
+         'border' : '15px solid dimgray'
+      });
+
+   });
 
 
 
