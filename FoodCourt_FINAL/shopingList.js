@@ -23,8 +23,9 @@ function sideListName(idx) {
 
 // 해당 인덱스 사이드메뉴 총 가격 리턴
 function sideListPrice(idx) {
+    var sideListP=0;
     for (var i = 0; i < shopingList[idx].side.length; i++) {
-        var sideListP = shopingList[idx].side[i].side_price;
+        sideListP = sideListP+shopingList[idx].side[i].side_price;
     }
 
     return sideListP;
@@ -32,29 +33,31 @@ function sideListPrice(idx) {
 
 
 //장바구니 내 모든 수량 리턴
-function getTotalAmount() {
+// function getTotalAmount() {
 
-    var totalAmount = 0
+//     var totalAmount = 0
 
-    for (var idx = 0; idx < shopingList.length; idx++) {
-        totalAmount += shopingList[idx].samount;
-    }
+//     for (var idx = 0; idx < shopingList.length; idx++) {
+//         totalAmount += shopingList[idx].samount;
+//     }
 
-    return totalAmount;
-}
+//     $('#getAmount').html('주문 수량 : '+totalAmount);
+// }
 
 
 
-//장바구니 내 모든 가격 리턴
-function getTotalPrice() {
-    var totalPrice = 0
+// //장바구니 내 모든 가격 리턴
+// function getTotalPrice() {
+//     var tPrice = 0
 
-    for (var idx = 0; idx < shopingList.length; idx++) {
-        totalPrice += shopingList[idx].sprice;
-    }
+//     for (var idx = 0; idx < shopingList.length; idx++) {
+//         tPrice += shopingList[idx].samount*shopingList[idx].sprice;
+//     }
 
-    return totalPrice;
-}
+//     var totalPrice=totalPrice+tPrice;
+
+//     $('#getPrice').html('주문 금액 : '+totalPrice);
+// }
 
 
 
@@ -74,7 +77,9 @@ function cart_list() {
     for (var idx = 0; idx < shopingList.length; idx++) {
         list += '<tr>     <td>' + idx + '</td>';
         list += '     <td>' + shopingList[idx].sname + '</td>';
+
         list += '     <td>' + sideListName(idx) + '</td>';
+
         list += '     <td> ' + shopingList[idx].samount + '</td>';
         list += '     <td>' + shopingList[idx].sprice + '</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
@@ -175,7 +180,7 @@ $(document).ready(function () {
     });
 
 
-    
+
 
 
     // 사이드창 선택사항 - 객체로
@@ -223,7 +228,7 @@ $(document).ready(function () {
 
         sidemenuArr.push(sidemenu);
 
-        menu.samoun=amount;
+        menu.samount = amount;
         menu.side = sidemenuArr;
 
         shopingList.push(menu);
