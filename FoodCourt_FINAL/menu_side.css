@@ -43,7 +43,7 @@
 }
 
 /* ------------------------------------------------- */
-/* 영역 : 선택메뉴 이미지 및 수량선택 */
+/* 영역 : 선택메뉴 이미지 */
 #select_menu_img {
     width: 200px;
     height: 200px;
@@ -81,7 +81,7 @@
 /* 텍스트 : 선택메뉴 이름 */
 .sub_title {
     color: red;
-    size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -89,6 +89,7 @@
 /* 텍스트 : 선택메뉴 설명 */
 .info {
     font-weight: 100;
+    color: dimgray;
 }
 
 
@@ -129,7 +130,7 @@
 /* 텍스트 : 선택메뉴 가격 */
 .select_menu_price {
     color: red;
-    size: 2em;
+    font-size: 1.2em; 
     font-weight: bold;
     margin-right: 30px;
     text-align: right; 
@@ -146,7 +147,8 @@
 }
 
 /* 영역 : 사이드메뉴 div */
-#side_menu_div {
+/* 가람 수정 클래스 */
+.side_menu_div {
     position: relative;
     margin: 0 auto;
 
@@ -158,7 +160,8 @@
 
 
 /* 영역 : 사이드메뉴 각 셀들 */
-#side_menu_div div {
+/* 가람 수정 클래스 */
+.side_menu_div div {
     float: left;
     padding-bottom: 10px;
 }
@@ -168,6 +171,9 @@
     padding-top: 15px;
     padding-left: 40px;
     color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    
 }
 
 /* 이미지 : 사이드메뉴 */
@@ -190,16 +196,16 @@
     color: dimgrey;
     margin-right: 20px;
     padding-bottom: 10px;
-
+    display: inline;
     
 }
 
 
 /* 텍스트 : 사이드메뉴 가격 */
 .side_menu_price {
-    font-weight: bold;
+    font-weight: 500;
     color: red;
-    margin-bottom: 10px;
+    display: inline;
 }
 
 /* 버튼 : 사이드메뉴 선택 */
@@ -210,6 +216,12 @@
     border: none;
     background-color: whitesmoke;
     
+}
+
+
+.select_border {
+    background-color: bisque;
+    border-radius: 10px;
 }
 
 
@@ -245,7 +257,7 @@
 }
 
 /* 버튼 : 사이드 메뉴창 - 취소 */
-.side_cancle {
+#side_cancle {
     width: 230px;
     height: 50px;
 
@@ -270,7 +282,7 @@
 /*-------------- 팝업창 스크립트 -------------- */
  
 
-#overlay {
+/* #overlay {
    position: fixed;
    height: 100%; 
    width: 100%;
@@ -280,7 +292,7 @@
    left: 0;
    background: rgba(0,0,0,0.8);
    display: none;
-}
+} */
 
 /* #popup {
    max-width: 600px;
@@ -293,12 +305,11 @@
    margin: 20px auto;
 } */
 
-#close {
+/* #close {
    position: relative;
    /* top: 10px;
    right: 10px; */
-   cursor: pointer;
+   /* cursor: pointer;
    color: #000;
    display: inline;
-}
-
+} */
