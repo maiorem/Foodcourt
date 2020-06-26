@@ -28,9 +28,6 @@
 
 3. 화면설계(Prototyping)    
 
-
-[PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
-
 ![image1](https://ifh.cc/g/Ar4ZUN.jpg)
 ![image2](https://ifh.cc/g/SFVHC6.jpg)
 
