@@ -28,7 +28,11 @@
 
 3. 화면설계(Prototyping)    
 
-
+![design1](https://ifh.cc/g/uEPi4c.jpg)
+![design2](https://ifh.cc/g/Xjq6wy.jpg)
+![design3](https://ifh.cc/g/3gj8ig.jpg)
+![design4](https://ifh.cc/g/QINVla.jpg)
+![design5](https://ifh.cc/g/IGVePy.jpg)
 
 
 <hr />
