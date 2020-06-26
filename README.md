@@ -16,10 +16,18 @@
 
 ## 초기 설계 (2020.06.23)
 
+[PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
+
 ### 목차    
 1. 정보구조도    
+
+![info](https://ifh.cc/g/l3a7VZ.jpg)
+
 2. 흐름도(Flow Chart)    
-3. 화면설계(Prototyping)     
+![flow](https://ifh.cc/g/D6RR35.jpg)
+
+3. 화면설계(Prototyping)    
+
 
 [PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
 
