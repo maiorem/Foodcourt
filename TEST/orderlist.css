@@ -66,20 +66,24 @@ ul>li{
     list-style: none;
     width: 50px;
 
-    margin: 0 20px;
+    margin-left: 20px;
     padding-top: 10px;
 
     text-align: center;
     /* padding-left: 20px;
     padding-right: 20px; */
 }
-/* ul>li:nth-child(3){
-    width: 180px;
-    text-align: left;
-} */
 ul>li:nth-child(2){
+    margin-left:0px;
+    margin-right:20px;
     width: 120px;
     text-align: left;
+}
+ul>li:nth-child(3){
+    margin-right: 50px;
+}
+ul>li:last-child{
+    margin-left: 0px;
 }
 .order_content{
     clear: both;
