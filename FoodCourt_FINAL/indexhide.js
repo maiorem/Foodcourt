@@ -1,44 +1,29 @@
-$('.js-click-modal').click(function(){
-  $('.container').addClass('modal-open');
-});
-
-$('.js-close-modal').click(function(){
-  $('.container').removeClass('modal-open');
-});
-
-$('.js-click-modal_korea').click(function(){
-
-  $('#wrap_kiosk').addClass('modal-open');
-});
-
-
-
 $(document).ready(function(){
 
-  $('#koreafood').click(function(){
-    alert('asf');
-  // if($('#menuTable_jap').css('display')=="inline"){
-  //   $(this).hide();
-  // }
+
+  $('.js-click-modal').click(function(){
+    $('.container').addClass('modal-open');
+    $('#modal').css('display','block');
+  });
+  
+  $('.js-close-modal').click(function(){
+    $('.container').removeClass('modal-open');
+  });
+  
+  $('.js-click-modal_korea').click(function(){
+    $('#wrap_kiosk').addClass('modal-open');
+    $('#wrap_kiosk').css('display','block');
+    $('#order_outside').css('display','block');
+  
   });
   
   
   
   
-  
-  
-  
-    $('#btn1').click(function(){
-      var offset = $('#menuTable_jap').offset();
-          $('html').animate({scrollTop : offset.top}, 0);
+      $('.menuOpt > a').on('click', function(){
+      
+          var GetaName = $(this).attr('href').split('#');
+          $('html,body').animate({scrollTop : $('a[name ='+GetaName[1]+']').offset().top},10000);
          
-          if($('#menuTable_jap').css('display') == 'none'){
-            $('#menuTable_jap').show();
-        }else{
-            $('#menuTable_jap').hide();
-        }
-  
-    });
-  
+      });
   });
-  
