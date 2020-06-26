@@ -57,7 +57,7 @@
 <hr />
 
 ## 실행 방법
-* 전체 클로닝 후 FinalCourt_FINAL 폴더 안의 window.html 실행
+* 전체 클로닝 후 FoodCourt_FINAL 폴더 안의 window.html 실행
 
 <hr />
 
