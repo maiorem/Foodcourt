@@ -25,4 +25,8 @@
 
 <hr />
 
+## 최종 PPT
+[LINK](https://docs.google.com/presentation/d/1pcroktsJ8U951h3KN9BXd2Eo072Nanjb/edit#slide=id.g89e9fa3c1d_6_98)
+
+<hr />
 
