@@ -14,6 +14,16 @@
 
 <hr />
 
+## 사용 기술
+* HTML5    
+* CSS3    
+* Javascript    
+* JSON    
+
+
+
+<hr />
+
 ## 초기 설계 (2020.06.23)
 
 [PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
@@ -28,7 +38,11 @@
 
 3. 화면설계(Prototyping)    
 
-
+![design1](https://ifh.cc/g/uEPi4c.jpg)
+![design2](https://ifh.cc/g/Xjq6wy.jpg)
+![design3](https://ifh.cc/g/3gj8ig.jpg)
+![design4](https://ifh.cc/g/QINVla.jpg)
+![design5](https://ifh.cc/g/IGVePy.jpg)
 
 
 <hr />
@@ -42,3 +56,11 @@
 
 <hr />
 
+## 실행 방법
+* 전체 클로닝 후 FoodCourt_FINAL 폴더 안의 window.html 실행
+
+<hr />
+
+## 시연 영상
+
+<iframe width="640" height="360" src="https://youtu.be/pm3LveYlIrY" frameborder="0" gesture="media" allowfullscreen=""></iframe>
