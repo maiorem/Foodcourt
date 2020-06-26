@@ -278,6 +278,7 @@ $(document).ready(function () {
             getTotalAmount();
             getTotalPrice();
             setLocal();
+            check=0; /* push후 check 초기화 */
         }
         /* 사이드 메뉴 미선택 시 */
         else if(check==0){
