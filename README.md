@@ -23,6 +23,11 @@
 
 [PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
 
+
 <hr />
 
+## 최종 PPT (2020.06.26)
+[LINK](https://docs.google.com/presentation/d/1pcroktsJ8U951h3KN9BXd2Eo072Nanjb/edit#slide=id.g89e9fa3c1d_6_98)
+
+<hr />
 
