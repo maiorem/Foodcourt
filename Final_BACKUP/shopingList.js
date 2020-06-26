@@ -15,6 +15,11 @@ function deleteCart(idx) {
 
 }
 
+function addComma(num) {
+    var regexp = /\B(?=(\d{3})+(?!\d))/g;
+    return num.toString().replace(regexp, ',');
+  }
+
 //장바구니 내 모든 수량 리턴 => 장바구니로
 function getTotalAmount() {
 
