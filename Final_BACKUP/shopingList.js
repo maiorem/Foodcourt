@@ -35,6 +35,11 @@ function deleteCart(idx) {
 //     return sideListP;
 // }
 
+function addComma(num) {
+    var regexp = /\B(?=(\d{3})+(?!\d))/g;
+    return num.toString().replace(regexp, ',');
+  }
+
 
 //장바구니 내 모든 수량 리턴 => 장바구니로
 function getTotalAmount() {
@@ -55,10 +60,14 @@ function getTotalPrice() {
     var tPrice = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
+        // tPrice = addComma(tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price));
         tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
 
-    $('#getPrice').html('주문 금액 : ' + tPrice);
+    
+    
+    $('#getPrice').html('주문 금액 : ' + addComma(tPrice) + "원");
+    // $('#getPrice').html('주문 금액 : ' + tPrice + "원");
 }
 
 
@@ -81,10 +90,14 @@ function getTotalPriceOrder() {
     var tPrice = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
+        // tPrice = addComma(tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price));
+        // tPrice = addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
         tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
 
-    $('#getPriceOrder').html('주문 금액 : ' + tPrice);
+    
+
+    $('#getPriceOrder').html('주문 금액 : ' + addComma(tPrice) + "원");
 }
 
 
@@ -117,7 +130,7 @@ function cart_list() {
         list += '     <td>' + shopingList[idx].side_name + '</td>';
 
         list += '     <td> ' + shopingList[idx].samount + '</td>';
-        list += '     <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
+        list += '     <td>' + addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '원</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
     }
 
@@ -141,7 +154,7 @@ function show_cartList() {
         cartList += '       <td>' + shopingList[idx].sname + '</td>';
         cartList += '       <td>' + shopingList[idx].side_name + '</td>';
         cartList += '       <td>' + shopingList[idx].samount + '</td>';
-        cartList += '       <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
+        cartList += '       <td>' + addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '원</td>';
         cartList += '';
         cartList += '   </tr>';
 
