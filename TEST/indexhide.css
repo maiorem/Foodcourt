@@ -26,10 +26,15 @@
   
   #cart_list {
     width: 600px;
-    height: 150px;
+    /* height: 150px; */
     overflow: auto;
     position:absolute;
     font-size: 0.8em;
+  }
+
+  /* 장바구니, 테이블 행간격조정 */
+  #cartin>table>tbody>tr>td {
+    padding: 5px;
   }
   
   #event_area {
