@@ -111,7 +111,7 @@ function cart_list() {
 
 
     for (var idx = 0; idx < shopingList.length; idx++) {
-        list += '<tr>     <td>' + idx + '</td>';
+        list += '<tr>     <td>' + (idx+1) + '</td>';
         list += '     <td>' + shopingList[idx].sname + '</td>';
 
         list += '     <td>' + shopingList[idx].side_name + '</td>';
@@ -137,7 +137,7 @@ function show_cartList() {
 
     for (var idx = 0; idx <shopingList.length; idx++) {
         cartList += '   <tr>';
-        cartList += '       <td>' + idx + '</td>';
+        cartList += '       <td>' + (idx+1) + '</td>';
         cartList += '       <td>' + shopingList[idx].sname + '</td>';
         cartList += '       <td>' + shopingList[idx].side_name + '</td>';
         cartList += '       <td>' + shopingList[idx].samount + '</td>';
