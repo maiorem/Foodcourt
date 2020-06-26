@@ -28,14 +28,17 @@
 
 3. 화면설계(Prototyping)    
 
-![image1](https://ifh.cc/g/Ar4ZUN.jpg)
-![image2](https://ifh.cc/g/SFVHC6.jpg)
+
 
 
 <hr />
 
 ## 최종 PPT (2020.06.26)
 [LINK](https://docs.google.com/presentation/d/1pcroktsJ8U951h3KN9BXd2Eo072Nanjb/edit#slide=id.g89e9fa3c1d_6_98)
+
+![image1](https://ifh.cc/g/Ar4ZUN.jpg)
+![image2](https://ifh.cc/g/SFVHC6.jpg)
+
 
 <hr />
 
