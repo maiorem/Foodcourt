@@ -90,10 +90,12 @@ $(document).ready(function() {
    // 사이드메뉴 선택시 속성추가
    $('.side_menu_btn').click(function() {
       if($(this).hasClass('select_border')){  
-         $(this).removeClass('select_border');
+         $(this).filter('img').removeClass('select_border');
+         /* $(this).removeClass('select_border'); */
          console.log(true);
       }else{
-         $(this).addClass('select_border');
+         $(this).filter('img').addClass('select_border');
+         /* $(this).addClass('select_border'); */
          console.log(false);
          
       }
