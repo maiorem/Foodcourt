@@ -29,6 +29,12 @@ $(document).ready(function() {
       $('#wrap_kiosk').removeClass('modal-open');
       $('.overlay').fadeOut(300);
       $('.container').removeClass('modal-open');
+
+      sessionStorage.clear();
+
+      setTimeout(function(){
+         location.reload()
+      },1500);
    });
 
 
