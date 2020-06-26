@@ -147,7 +147,7 @@ ul>li:nth-child(2){
     font-size: 20px;
     color: white;
 }
-button.cancel{
+button.close2{
     background-color: dimgray;
     border: 1px solid dimgray;
 }
@@ -158,7 +158,7 @@ button.togo{
     border: 1px solid dimgray;
 }
 
- button.credit{
+button.credit{
     border: 1px solid orange;
     background-color: orange;
 
@@ -170,5 +170,4 @@ button.hall{
     background-color: orange;
 
     float: right;
-
 }
