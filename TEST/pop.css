@@ -1,15 +1,8 @@
-button {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    font-weight: bold;
-    /* padding: 10px 30px; */
-    border-radius: 3px;
- }
-
  .menu_cell>button{
     background-color: white;
- }
+    border-color: white;
+    border-radius: 10px;
+   }
  .menu_btn>h3{
     color: black;
  }
