@@ -96,6 +96,7 @@ ul>li:nth-child(2){
     width: 30px;
     padding: 10px;
     text-align: center;
+
 }
 /* .order_content td:nth-child(3){
     width: 200px;
@@ -115,6 +116,7 @@ ul>li:nth-child(2){
 }
 .order_content td:nth-child(5){
     text-align: left;
+    width:100px;
 }
 
 #getAmountOrder{
