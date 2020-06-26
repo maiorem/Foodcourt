@@ -42,7 +42,7 @@ function getTotalPrice() {
         tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
 
-    $('#getPrice').html('주문 금액 : ' + tPrice);
+    $('#getPrice').html('주문 금액 : ' + addComma(tPrice) +"원");
 }
 
 
@@ -68,7 +68,7 @@ function getTotalPriceOrder() {
         tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
 
-    $('#getPriceOrder').html('주문 금액 : ' + tPrice);
+    $('#getPriceOrder').html('주문 금액 : ' + addComma(tPrice)+"원");
 }
 
 
@@ -92,7 +92,7 @@ function cart_list() {
         list += '     <td>' + shopingList[idx].side_name + '</td>';
 
         list += '     <td> ' + shopingList[idx].samount + '</td>';
-        list += '     <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
+        list += '     <td>' + addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '원</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
     }
 
@@ -116,7 +116,7 @@ function show_cartList() {
         cartList += '       <td>' + shopingList[idx].sname + '</td>';
         cartList += '       <td>' + shopingList[idx].side_name + '</td>';
         cartList += '       <td>' + shopingList[idx].samount + '</td>';
-        cartList += '       <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
+        cartList += '       <td>' + addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '원</td>';
         cartList += '';
         cartList += '   </tr>';
 
