@@ -377,6 +377,53 @@ $(document).ready(function() {
                   });
                
 
+            var kr= $('#koreafood');
+            var jp= $('#japanfood');
+            var cn= $('#chinafood');
+            var wt= $('#westemfood');
+            var as= $('#asianfood');
+            var de= $('#dessertfood');
+
+            kr.click(function(){
+               koreabtn.css({
+                  'border' : '3px solid orange'
+               })
+               koreabtn.trigger('click');
+            });
+
+            jp.click(function(){
+               japanbtn.css({
+                  'border' : '3px solid orange'
+               });
+               japanbtn.trigger('click');
+
+            });
+
+            cn.click(function(){
+               chinabtn.css({
+                  'border' : '3px solid orange'
+               })
+               chinabtn.trigger('click');
+            });
+            wt.click(function(){
+               westembtn.css({
+                  'border' : '3px solid orange'
+               })
+               westembtn.trigger('click');
+            });
+            as.click(function(){
+               asianbtn.css({
+                  'border' : '3px solid orange'
+               })
+               asianbtn.trigger('click');
+            });
+            de.click(function(){
+               dessertbtn.css({
+                  'border' : '3px solid orange'
+               })
+               dessertbtn.trigger('click');
+            });
+               
 
 
 
