@@ -8,7 +8,10 @@ function deleteCart(idx) {
     shopingList.splice(idx, 1);
     cart_list();
     show_cartList();
+    getTotalAmount();
+    getTotalPrice();
     setLocal();
+
 }
 
 
