@@ -76,13 +76,13 @@ function cart_list() {
 
     var list = '';
     list += '<table id="cart_list">';
-    list += '<tr>';
+/*     list += '<tr>';
     list += '<th>번호</th>';
     list += '<th>메뉴</th>';
     list += '<th>사이드</th>';
     list += '<th>수량</th>';
     list += '<th>금액</th>';
-    list += '<th></th></tr>';
+    list += '<th></th></tr>'; */
 
 
     for (var idx = 0; idx < shopingList.length; idx++) {
