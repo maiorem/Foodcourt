@@ -51,6 +51,7 @@ window.onload = function () {
     setTimeout(function(){
       wrap02.style.display="none";
       wrap03.style.display = "none";
+      location.reload();
       //첫화면
       first.style.display="block";
       first.setAttribute('class','container');
