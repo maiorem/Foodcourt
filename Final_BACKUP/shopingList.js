@@ -3,6 +3,7 @@
 var shopingList = [];
 
 var menu = {};
+var check = 0; /* 사이드 메뉴 선택 확인 변수 */
 
 function deleteCart(idx) {
     shopingList.splice(idx, 1);
@@ -13,33 +14,6 @@ function deleteCart(idx) {
     setLocal();
 
 }
-
-
-// // 해당 인덱스 사이드메뉴 리스트 이름들 리턴
-// function sideListName(idx) {
-//     for (var i = 0; i < shopingList[idx].side.length; i++) {
-//         var sideListN = shopingList[idx].side[i].side_name;
-//     }
-
-//     return sideListN;
-
-// }
-
-// // // 해당 인덱스 사이드메뉴 총 가격 리턴
-// function sideListPrice(idx) {
-//     var sideListP=0;
-//     for (var i = 0; i < shopingList[idx].side.length; i++) {
-//         sideListP = sideListP+shopingList[idx].side[i].side_price;
-//     }
-
-//     return sideListP;
-// }
-
-function addComma(num) {
-    var regexp = /\B(?=(\d{3})+(?!\d))/g;
-    return num.toString().replace(regexp, ',');
-  }
-
 
 //장바구니 내 모든 수량 리턴 => 장바구니로
 function getTotalAmount() {
@@ -60,14 +34,10 @@ function getTotalPrice() {
     var tPrice = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
-        // tPrice = addComma(tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price));
         tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
 
-    
-    
-    $('#getPrice').html('주문 금액 : ' + addComma(tPrice) + "원");
-    // $('#getPrice').html('주문 금액 : ' + tPrice + "원");
+    $('#getPrice').html('주문 금액 : ' + tPrice);
 }
 
 
@@ -90,24 +60,11 @@ function getTotalPriceOrder() {
     var tPrice = 0
 
     for (var idx = 0; idx < shopingList.length; idx++) {
-        // tPrice = addComma(tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price));
-        // tPrice = addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
         tPrice = tPrice + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price);
     }
 
-    
-
-    $('#getPriceOrder').html('주문 금액 : ' + addComma(tPrice) + "원");
+    $('#getPriceOrder').html('주문 금액 : ' + tPrice);
 }
-
-
-
-
-
-
-
-
-
 
 
 function cart_list() {
@@ -130,7 +87,7 @@ function cart_list() {
         list += '     <td>' + shopingList[idx].side_name + '</td>';
 
         list += '     <td> ' + shopingList[idx].samount + '</td>';
-        list += '     <td>' + addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '원</td>';
+        list += '     <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
         list += '     <td> <a href="javascript:deleteCart(' + idx + ')">삭제</a> </td></tr>';
     }
 
@@ -154,7 +111,7 @@ function show_cartList() {
         cartList += '       <td>' + shopingList[idx].sname + '</td>';
         cartList += '       <td>' + shopingList[idx].side_name + '</td>';
         cartList += '       <td>' + shopingList[idx].samount + '</td>';
-        cartList += '       <td>' + addComma((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '원</td>';
+        cartList += '       <td>' + ((shopingList[idx].samount * shopingList[idx].sprice) + shopingList[idx].side_price) + '</td>';
         cartList += '';
         cartList += '   </tr>';
 
@@ -186,10 +143,6 @@ function setLocal() {
     var jsondata = JSON.stringify(shopingList);
     sessionStorage.setItem('foodcart', jsondata);
 }
-
-
-
-
 
 
 
@@ -229,11 +182,6 @@ $(document).ready(function () {
 
     });
 
-
-    //윤원 - 결제하기 클릭 시 주문목록
-    // $('.trigger2').click(function () {
-    //     $('#order_content').html(showCart());
-    // });
 
     //  (팝업-사이드창) 
     // 사이드메뉴 선택시 속성추가
@@ -277,7 +225,6 @@ $(document).ready(function () {
             sname: name,
             sprice: price,
         }
-
     });
 
 
@@ -291,11 +238,9 @@ $(document).ready(function () {
 
 
     var sidemenu = {};
-    // var sidemenuArr = [];
 
-    // 사이드메뉴 선택. (여러개 선택시?)
+    // 사이드메뉴 선택. (여러개 선택시)
     $('.side_menu_btn').click(function () {
-
         var amount = $('#select_count').find('input').val();
 
         // 만약에, 선택되어있다면, 
@@ -312,29 +257,41 @@ $(document).ready(function () {
             sideprice = 0;
         }
 
-        // sidemenu = {
-        //     side_name: sidename,
-        //     side_price: sideprice
-        // }
-
-        // sidemenuArr.push(sidemenu);
-
         menu.samount = amount;
         menu.side_name = sidename;
         menu.side_price = sideprice;
-
-        shopingList.push(menu);
-        cart_list();
-        show_cartList();
-        setLocal();
-
-
+        
+        check = 1;
     });
 
+    $('#side_ok').click(function () {
+        /* 사이드 메뉴 선택 시 */
+        if(check==1){
+            shopingList.push(menu);
+            cart_list();
+            show_cartList();
+            getTotalAmount();
+            getTotalPrice();
+            setLocal();
+        }
+        /* 사이드 메뉴 미선택 시 */
+        else if(check==0){
+            var amount = $('#select_count').find('input').val();
+           
+            var sidename = 0;
+            var sideprice = 0;
+    
+            menu.samount = amount;
+            menu.side_name = sidename;
+            menu.side_price = sideprice;
 
-
-    var order = $('#side_ok').click(function () {
-        return menu;
+            shopingList.push(menu);
+            cart_list();
+            show_cartList();
+            getTotalAmount();
+            getTotalPrice();
+            setLocal();
+        }
     });
 
 
