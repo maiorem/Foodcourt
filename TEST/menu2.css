@@ -1,60 +1,69 @@
+body{
+    margin: 0px 400px;
+}
 
-        
-        #wrap {
-            position: absolute;
-        }
-        
-        #menuselector {
-            width: 1024px;
-            height: 768px;
-            margin: auto;
-            top: 10px;
-        }
+#modal, .modal{
+    width: 1024px;
+    height: 768px;
+    margin: 0px 400px;
+}
 
-        div.header{
-            text-align: center;
-        }
-        #menulogo{
-            width: 214px;
-            height: 919x;
-        }
+#wrap {
+    margin: 0px 300px;
+    position: absolute;
+}
 
-        /* button{
-            width: 164px;
-            height: 163px;
-        } */
+#menuselector {
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    top: 10px;
+}
 
-       div.content>button.menu>img{
-           width: 144px;
-           height: 146px;
-       }
-        button.menu{
-            border: 10px solid #696969;
-            margin: 20px 30px 0 50px;
-            border-radius: 3px;
-        }
+div.header{
+    text-align: center;
+}
+#menulogo{
+    width: 214px;
+    height: 919x;
+}
 
-        div.content{
-           text-align: center;
-        }
-        div.footer>img{
-            width: 55px;
-            height: 52px;
-        }
-        div.footer>img.next{
-            float: right;
-            margin-right: 80px;
-        }
-        div.footer>img.previous{
-            float: left;
-            margin-left: 80px;
-        }
+/* button{
+    width: 164px;
+    height: 163px;
+} */
+
+div.content>button.menu>img{
+    width: 144px;
+    height: 146px;
+}
+button.menu{
+    border: 10px solid #696969;
+    margin: 20px 30px 0 50px;
+    border-radius: 3px;
+}
+
+div.content{
+    text-align: center;
+}
+div.footer>img{
+    width: 55px;
+    height: 52px;
+}
+div.footer>img.next{
+    float: right;
+    margin-right: 80px;
+}
+div.footer>img.previous{
+    float: left;
+    margin-left: 80px;
+}
 
 
-        /* #side_menu_div button{
-            width: 200px;
-            height: 163px;
-        } */
+/* #side_menu_div button{
+    width: 200px;
+    height: 163px;
+} */
 
       
 /* 영역 : 상세메뉴 셀 */
