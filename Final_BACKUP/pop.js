@@ -289,5 +289,99 @@ $(document).ready(function() {
    });
 
 
+   
+   var dessertbtn = $('#dessertbtn');
+   var asianbtn = $('#asianbtn');
+   var westembtn = $('#westembtn');
+   var chinabtn = $('#chinabtn');
+   var japanbtn = $('#japanbtn');
+   var koreabtn = $('#koreabtn');
 
-});
+
+   
+   dessertbtn.click(function(){
+
+   $(this).css({
+      'border' : '3px solid orange'
+   });
+   asianbtn.css('border','');
+   westembtn.css('border','');
+   chinabtn.css('border','');
+   japanbtn.css('border','');
+   koreabtn.css('border','');
+   });
+
+
+   
+   asianbtn.click(function(){
+
+      $(this).css({
+         'border' : '3px solid orange'
+      });
+      dessertbtn.css('border','');
+      westembtn.css('border','');
+      chinabtn.css('border','');
+      japanbtn.css('border','');
+      koreabtn.css('border','');
+      });
+
+   
+      westembtn.click(function(){
+
+         $(this).css({
+            'border' : '3px solid orange'
+         });
+         asianbtn.css('border','');
+         dessertbtn.css('border','');
+         chinabtn.css('border','');
+         japanbtn.css('border','');
+         koreabtn.css('border','');
+         });
+
+         chinabtn.click(function(){
+
+            $(this).css({
+               'border' : '3px solid orange'
+            });
+            asianbtn.css('border','');
+            westembtn.css('border','');
+            dessertbtn.css('border','');
+            japanbtn.css('border','');
+            koreabtn.css('border','');
+            });
+         
+      
+            japanbtn.click(function(){
+
+               $(this).css({
+                  'border' : '3px solid orange'
+               });
+               asianbtn.css('border','');
+               westembtn.css('border','');
+               chinabtn.css('border','');
+               dessertbtn.css('border','');
+               koreabtn.css('border','');
+               });
+            
+
+               koreabtn.click(function(){
+
+                  $(this).css({
+                     'border' : '3px solid orange'
+                  });
+                  asianbtn.css('border','');
+                  westembtn.css('border','');
+                  chinabtn.css('border','');
+                  japanbtn.css('border','');
+                  dessertbtn.css('border','');
+                  });
+               
+
+
+
+
+
+
+
+   });
+
