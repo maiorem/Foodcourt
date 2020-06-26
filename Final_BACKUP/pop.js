@@ -12,19 +12,38 @@ $(document).ready(function() {
 
    $('.trigger3').click(function() {
       $('.overlay3').fadeIn(300);
+
+      sessionStorage.clear();
+      localStorage.clear();
       // 대기번호 추가 - 장윤원
       var mathRandom = Math.random();
       var randNum= document.getElementById("msg_waitingNum");
           randNum.innerText = '대기번호 : '+Math.floor( mathRandom * 1000 + 1 );
+
+
    });
 
 
-   $('.close').click(function() {
+   $('.close').click(function() { // 처음으로 
       // $('#overlay').fadeOut(300);
       $('#wrap_kiosk').removeClass('modal-open');
       $('.overlay').fadeOut(300);
       $('.container').removeClass('modal-open');
    });
+
+
+   $('#side_cancle').click(function(){ // 사이드에서 취소
+
+      $('.overlay').fadeOut(300);
+   });
+
+
+   $('.cancle2').click(function(){ //결제하기
+
+      $('.overlay2').fadeOut(300);
+      $('#overlay2').fadeOut(300);
+   });
+
 
    
 
