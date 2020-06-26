@@ -12,10 +12,15 @@ $(document).ready(function() {
 
    $('.trigger3').click(function() {
       $('.overlay3').fadeIn(300);
+
+      sessionStorage.clear();
+      localStorage.clear();
       // 대기번호 추가 - 장윤원
       var mathRandom = Math.random();
       var randNum= document.getElementById("msg_waitingNum");
           randNum.innerText = '대기번호 : '+Math.floor( mathRandom * 1000 + 1 );
+
+
    });
 
 
