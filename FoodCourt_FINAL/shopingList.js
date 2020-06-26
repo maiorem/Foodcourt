@@ -322,7 +322,10 @@ $(document).ready(function () {
 
     $('#side_ok').click(function () {
         shopingList.push(menu);
-        // return menu;
+        cart_list();
+        show_cartList();
+        setLocal();
+
     });
 
 
