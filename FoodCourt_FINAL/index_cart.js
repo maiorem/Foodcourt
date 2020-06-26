@@ -99,7 +99,7 @@ $(document).ready(function () {
 
     initStore();
     cart_list();
-    $('#side_ok').submit(createShoping);
+    $('#content_pop_background').click(createShoping);
 
 });
 
