@@ -105,6 +105,30 @@ ul>li:nth-child(2){
     width: 150px;
     text-align: left;
 }
+.order_content td:nth-child(3){
+    width: 120px;
+    text-align: left;
+}
+
+.order_content td:nth-child(4){
+    text-align: left;
+}
+.order_content td:nth-child(5){
+    text-align: left;
+}
+
+#getAmountOrder{
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#getPriceOrder {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .order_footer{
     margin: 0 30px;
 }
