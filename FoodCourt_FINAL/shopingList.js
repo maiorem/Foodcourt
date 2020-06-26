@@ -310,7 +310,7 @@ $(document).ready(function () {
         menu.side_name = sidename;
         menu.side_price = sideprice;
 
-        shopingList.push(menu);
+        // shopingList.push(menu);
         cart_list();
         show_cartList();
         setLocal();
@@ -320,8 +320,9 @@ $(document).ready(function () {
 
 
 
-    var order = $('#side_ok').click(function () {
-        return menu;
+    $('#side_ok').click(function () {
+        shopingList.push(menu);
+        // return menu;
     });
 
 
