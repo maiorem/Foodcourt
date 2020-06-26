@@ -205,7 +205,6 @@
 .side_menu_price {
     font-weight: 500;
     color: red;
-    margin-bottom: 10px;
     display: inline;
 }
 
@@ -310,8 +309,7 @@
    position: relative;
    /* top: 10px;
    right: 10px; */
-   cursor: pointer;
+   /* cursor: pointer;
    color: #000;
    display: inline;
 } */
-
