@@ -23,9 +23,6 @@
 
 [PPT LINK](https://docs.google.com/presentation/d/1NztJ7QlAL7kPgRc0KVBQ4JSrh5Svq3Y9/edit#slide=id.p1)
 
-![image1](.\Downloads\(작업중) 200626_최종발표_푸드코트 키오스크.pptx)
-![image2](.\Downloads\(작업중) 200626_최종발표_푸드코트 키오스크.pptx (1))
-
 
 <hr />
 
