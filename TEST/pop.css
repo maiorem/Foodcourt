@@ -6,6 +6,13 @@ button {
     /* padding: 10px 30px; */
     border-radius: 3px;
  }
+
+ .menu_cell>button{
+    background-color: white;
+ }
+ .menu_btn>h3{
+    color: black;
+ }
  
  .overlay {
     position: fixed;
