@@ -324,7 +324,10 @@ $(document).ready(function () {
         shopingList.push(menu);
         cart_list();
         show_cartList();
+        getTotalAmount();
+        getTotalPrice();
         setLocal();
+
 
     });
 
